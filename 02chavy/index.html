@@ -8,9 +8,47 @@
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		
+	</script>
+	<style>
+		.header{width: 1200px; margin: 20px auto;}
+		.header img{display: block;}
+		.header .logo,
+		.header .nav{
+			float:left; 
+		}
+		.nav ul{position: relative;}
+		.nav li{float:left; line-height: 80px; margin-left: 120px;}
+		.nav li:nth-child(2){margin-left: 65px;}
+		.nav li:nth-child(3){margin-left: 65px;}
+		.nav li:nth-child(4){margin-left: 65px;}
+		.nav li:nth-child(5){margin-left: 130px;}
+		.nav li:nth-child(6){margin-left: 65px;}
+		.nav li:hover{font-weight: bold;}
 
+		.nav .deco{
+			width: 120px; height: 50px; background-color: rgba(255,0,255,0.5);
+			position: absolute; right: 0;
+		}
+	</style>
 </head>
 <body>
-	
+	<div class="header clearfix">
+			<div class="logo">
+				<a href="#"><img src="images/logo.jpg" alt=""></a>
+			</div>
+		<div class="nav">
+			<ul class="clearfix">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">How it Works</a></li>
+				<li><a href="#">Company</a></li>
+				<li><a href="#">Career</a></li>
+				<li><a href="#">Sign in</a></li>
+				<li><a href="#">Register</a></li>
+				<div class="deco"></div>
+			</ul>
+		</div>
+	</div>
 </body>
 </html>
