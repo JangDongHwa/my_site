@@ -9,10 +9,13 @@
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
-		
+		$(document).ready(function(){
+			$(".slider").bxSlider();
+		});
 	</script>
 	<style>
-		.header{width: 1200px; margin: 20px auto;}
+		/*header*/
+		.header{width: 1200px; margin: 20px auto; border: 1px solid #000;}
 		.header img{display: block;}
 		.header .logo,
 		.header .nav{
@@ -25,12 +28,16 @@
 		.nav li:nth-child(4){margin-left: 65px;}
 		.nav li:nth-child(5){margin-left: 130px;}
 		.nav li:nth-child(6){margin-left: 65px;}
-		.nav li:hover{font-weight: bold;}
+		.nav li:nth-child(6):hover{color: white;}
+		.nav li:hover{font-weight: bold;}a
 
 		.nav .deco{
-			width: 120px; height: 50px; background-color: rgba(255,0,255,0.5);
-			position: absolute; right: 0;
+			width: 80px; height: 50px; background-color: rgba(0,0,255,0.5);
+			position: absolute; top: 15px;right: -10px; border-radius: 15px;
 		}
+		/*slider*/
+		.sliderWrap{width: 1200px; margin: 0 auto;}
+		.slider{margin: 0 auto;}
 	</style>
 </head>
 <body>
@@ -48,6 +55,14 @@
 				<li><a href="#">Register</a></li>
 				<div class="deco"></div>
 			</ul>
+		</div>
+	</div>
+	<div class="sliderWrap">
+		<div class="slider">
+			<div><img src="images/slider01.jpg" alt="img"></div>
+			<div><img src="images/slider02.jpg" alt="img"></div>
+			<div><img src="images/slider03.jpg" alt="img"></div>
+			<div><img src="images/slider04.jpg" alt="img"></div>
 		</div>
 	</div>
 </body>
