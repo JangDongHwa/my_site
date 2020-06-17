@@ -10,59 +10,232 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider();
+			$(".slider").bxSlider({
+				auto:true, controls:false, pager:false
+			});
 		});
 	</script>
 	<style>
 		/*header*/
-		.header{width: 1200px; margin: 20px auto; border: 1px solid #000;}
+		header{margin: 20px 0 0 0;}
+		.header{width: 1200px; margin: 0 auto;}
 		.header img{display: block;}
 		.header .logo,
 		.header .nav{
 			float:left; 
 		}
 		.nav ul{position: relative;}
-		.nav li{float:left; line-height: 80px; margin-left: 120px;}
-		.nav li:nth-child(2){margin-left: 65px;}
-		.nav li:nth-child(3){margin-left: 65px;}
-		.nav li:nth-child(4){margin-left: 65px;}
-		.nav li:nth-child(5){margin-left: 130px;}
-		.nav li:nth-child(6){margin-left: 65px;}
-		.nav li:nth-child(6):hover{color: white;}
-		.nav li:hover{font-weight: bold;}a
-
-		.nav .deco{
+		.nav li{float:left; line-height: 80px; margin-left: 130px;}
+		.nav li:nth-child(2){margin-left: 45px;}
+		.nav li:nth-child(3){margin-left: 45px;}
+		.nav li:nth-child(4){margin-left: 45px;}
+		.nav li:nth-child(5){margin-left: 270px;}
+		.nav li:nth-child(6){
 			width: 80px; height: 50px; background-color: rgba(0,0,255,0.5);
-			position: absolute; top: 15px;right: -10px; border-radius: 15px;
+			position: absolute; top: 14px; right: -140px; border-radius: 25px; 
+			text-align: center; line-height: 43px;
 		}
+		.nav li:hover{font-weight: bold;}
+
 		/*slider*/
-		.sliderWrap{width: 1200px; margin: 0 auto;}
-		.slider{margin: 0 auto;}
+		.sliderWrap{width: 1200px; height: 500px; margin: 0 auto;}
+		.slider{width: 1200px; margin: 0 auto;}
+		.slider img{width:100%;}
+		.bx-wrapper {
+		    -moz-box-shadow: none;
+		    -webkit-box-shadow: none;
+		    box-shadow: none;
+		    border: 0 none;
+		}
+		.mSlider{position: relative;}
+		.mSlider .txt{
+			width: 400px; height: 450px;
+			position: absolute; top: 80px; left: 0;
+		}
+		.txt h2{margin-bottom: 20px;}
+		.txt p{margin-bottom: 20px;}
+		.txt .btn{
+			padding: 10px; border-radius: 25px; text-align: center; line-height: 30px;
+			width: 150px; height: 50px; background-color: rgba(0,0,255,0.5);
+		}
+		.txt .btn a{display: block; line-height: 30px;}
+		/*articleOne*/
+		.containerWrap{background-color: #d9c5da;}
+		.container{width: 1200px; height: 500px;margin: 0 auto; text-align: center;}
+		.container h2{padding: 80px 0 0 0;margin-bottom: 20px;}
+		/*articleTwo*/
+		.articleTwoWrap{width: 1200px; height: 500px; margin: 0 auto;}
+		.articleTwoWrap .articleTwo{float:left; width: 620px; margin: 120px 80px 0 0;}
+		.articleTwo h2{ margin: 20px 0 0 0; margin-bottom: 20px;}
+		.articleTwo p{margin-bottom: 20px;}
+		.articleTwo .btn{
+			padding: 10px; border-radius: 25px; text-align: center; line-height: 30px;
+			width: 150px; height: 50px; background-color: rgba(0,0,255,0.5);
+		}
+		.articleTwo .btn a{display: block; line-height: 30px;}
+		.articleTwoWrap .artIconWrap{
+			float:left; width: 480px; height: 500px; position: relative;
+		}
+		.artIconWrap .artIcon{
+			position: absolute; top: 80px;left: 100px;
+		}
+		.artIconWrap .artIcon1{
+			position: absolute; top: 80px; right: 50px;
+		}
+		.artIconWrap .artIcon2{
+			position: absolute; bottom: 70px; left: 100px;
+		}
+		.artIconWrap .artIcon3{
+			position: absolute; bottom: 70px; right: 50px;
+		}
+		.artIconWrap a{display: block;}
+		/*articleThree*/
+		.arttwWrap{background-color: #d9c5da; overflow:hidden;}
+		.arttwWrap .articleThreeWrap{width: 1200px; height: 500px; margin: 0 auto;}
+		.arttwWrap .articleThree{float:left;}
+		.arttwWrap .artImg{float:right;}
+		.articleThree{width: 400px;  margin: 120px 80px 0 0;}
+		.artImg{width: 500px; height: 500px;}
+		.artImg img{width: 100%;}
+		.articleThree h2{ margin: 20px 0 0 0; margin-bottom: 20px;}
+		.articleThree p{margin-bottom: 20px;}
+		.articleThree .btn{
+			padding: 10px; border-radius: 25px; text-align: center; line-height: 30px;
+			width: 150px; height: 50px; background-color: rgba(0,0,255,0.5);
+		}
+		.articleThree .btn a{display: block; line-height: 30px;}
+		.artImg .bg{background-color: #d9c5da;}
+		/*articleFour*/
+		.articleFourWrap{width: 1200px; height: 500px; margin: 0 auto; text-align: center;}
+		.contentOneWrap .contentOne{padding: 80px 0 0 0;margin-bottom: 20px;}
+		.contentOneWrap .btnWrap{position: relative; margin-bottom: 150px;}
+		.contentOneWrap .btnOne{
+			float:left; width: 200px;position: absolute; left: 50%; margin-left: -210px;
+			background-color: #eee; border-radius: 25px; line-height: 50px;
+		}
+		.contentOneWrap .btnTwo{
+			float:left; width: 200px;position: absolute; left: 50%; margin-left: 10px;
+			background-color: #eee; border-radius: 25px; line-height: 50px;
+		}
+		.contentOneWrap .btnOne:hover{border-radius: 25px; text-align: center; line-height: 50px;
+			width: 200px; height: 50px; background-color: rgba(0,0,255,0.5); font-weight: bold;}
+		.contentOneWrap .btnTwo:hover{border-radius: 25px; text-align: center; line-height: 50px;
+			width: 200px; height: 50px; background-color: rgba(0,0,255,0.5); font-weight: bold;}
+		.contentTwo h2{margin-bottom: 20px;}
 	</style>
 </head>
 <body>
-	<div class="header clearfix">
-			<div class="logo">
-				<a href="#"><img src="images/logo.jpg" alt=""></a>
+	<!-- header -->
+	<header>
+		<div class="header clearfix">
+				<div class="logo">
+					<a href="#"><img src="images/logo.jpg" alt=""></a>
+				</div>
+			<div class="nav">
+				<ul class="clearfix">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">How it Works</a></li>
+					<li><a href="#">Company</a></li>
+					<li><a href="#">Career</a></li>
+					<li><a href="#">Sign in</a></li>
+					<li><a href="#">Register</a></li>
+				</ul>
 			</div>
-		<div class="nav">
-			<ul class="clearfix">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">How it Works</a></li>
-				<li><a href="#">Company</a></li>
-				<li><a href="#">Career</a></li>
-				<li><a href="#">Sign in</a></li>
-				<li><a href="#">Register</a></li>
-				<div class="deco"></div>
-			</ul>
 		</div>
-	</div>
+	</header>
+	<!-- visual slider -->
 	<div class="sliderWrap">
 		<div class="slider">
-			<div><img src="images/slider01.jpg" alt="img"></div>
-			<div><img src="images/slider02.jpg" alt="img"></div>
-			<div><img src="images/slider03.jpg" alt="img"></div>
-			<div><img src="images/slider04.jpg" alt="img"></div>
+			<div class="mSlider">
+				<img src="images/slider01.jpg" alt="img">
+				<div class="txt">
+					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptatibus?</p>
+					<a href="#"><div class="btn">Request Demo</div></a>
+				</div>
+			</div>
+			<div class="mSlider">
+				<img src="images/slider02.jpg" alt="img">
+				<div class="txt">
+					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptatibus?</p>
+					<a href="#"><div class="btn">Request Demo</div></a>
+				</div>
+			</div>
+			<div class="mSlider">
+				<img src="images/slider03.jpg" alt="img">
+				<div class="txt">
+					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptatibus?</p>
+					<a href="#"><div class="btn">Request Demo</div></a>
+				</div>
+			</div>
+			<div class="mSlider">
+				<img src="images/slider04.jpg" alt="img">
+				<div class="txt">
+					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptatibus?</p>
+					<a href="#"><div class="btn">Request Demo</div></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- articleOne -->
+	<div class="containerWrap">
+		<div class="container">
+			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Repellendus sit praesentium obcaecati dicta.</p>
+		</div>
+	</div>
+	<!-- articleTwo -->
+	<div class="articleTwoWrap clearfix">
+		<div class="articleTwo">
+			<h2>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Distinctio consequatur delectus omnis odit assumenda inventore, <br>nostrum ab quos aperiam ut!</p>
+			<a href="#"><div class="btn">Request Demo</div></a>
+		</div>
+		<div class="artIconWrap">
+			<div class="artIcon">
+				<a href="#"><img src="images/artIcon01.jpg" alt=""></a>
+			</div>
+			<div class="artIcon1">
+				<a href="#"><img src="images/artIcon02.jpg" alt=""></a>
+			</div>
+			<div class="artIcon2">
+				<a href="#"><img src="images/artIcon03.jpg" alt=""></a>
+			</div>
+			<div class="artIcon3">
+				<a href="#"><img src="images/artIcon04.jpg" alt=""></a>
+			</div>
+		</div>
+	</div>
+	<!-- articleThree -->
+	<div class="arttwWrap">
+		<div class="articleThreeWrap clearfix">
+			<div class="articleThree">
+				<h2>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Fugiat qui ex labore, <br>commodi architecto.</p>
+				<a href="#"><div class="btn">Request Demo</div></a>
+			</div>
+			<div class="artImg">
+				<div class="bg"><img src="images/artImg01.jpg" alt=""></div>
+			</div>
+		</div>
+	</div>
+	<!-- articleFour -->
+	<div class="articleFourWrap">
+		<div class="contentOneWrap">
+			<div class="contentOne">
+				<h2>Lorem ipsum dolor sit amet, consectetur.</h2>
+			</div>
+			<div class="btnWrap clearfix">
+				<div class="btnOne"><a href="#">For Employers</a></div>
+				<div class="btnTwo"><a href="#">For Owners</a></div>
+			</div>
+		</div>
+		<div class="contentTwoWrap">
+			<div class="contentTwo"><h2>Lorem ipsum dolor.</h2></div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Saepe, voluptas repellat nemo tenetur ea commodi.</p>
 		</div>
 	</div>
 </body>
