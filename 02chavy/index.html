@@ -17,7 +17,6 @@
 	</script>
 	<style>
 		/*header*/
-		header{margin: 20px 0 0 0;}
 		.header{width: 1200px; margin: 0 auto;}
 		.header img{display: block;}
 		.header .logo,
@@ -35,22 +34,24 @@
 			position: absolute; top: 14px; right: -140px; border-radius: 25px; 
 			text-align: center; line-height: 43px;
 		}
+		.nav li a{display: block;}
 		.nav li:hover{font-weight: bold;}
 		.nav li:last-child :hover{font-weight: bold; color:white;}
 		/*slider*/
-		.sliderWrap{width: 1200px; height: 500px; margin: 0 auto;}
-		.slider{width: 1200px; margin: 0 auto;}
+		.sliderWrap{width: 100%; margin: 0 auto;}
+		.slider{width: 100%; margin: 0 auto;}
 		.slider img{width:100%;}
 		.bx-wrapper {
 		    -moz-box-shadow: none;
 		    -webkit-box-shadow: none;
 		    box-shadow: none;
 		    border: 0 none;
+		    margin-bottom: 0;
 		}
 		.mSlider{position: relative;}
 		.mSlider .txt{
 			width: 400px; height: 450px;
-			position: absolute; top: 80px; left: 0;
+			position: absolute; top: 80px; left: 360px;
 		}
 		.txt h2{margin-bottom: 20px;}
 		.txt p{margin-bottom: 20px;}
@@ -59,12 +60,13 @@
 			width: 150px; height: 50px; background-color: rgba(0,0,255,0.5);
 		}
 		.txt .btn a{display: block; line-height: 30px;}
+		.txt .btn:hover a{font-weight: bold;}
 		/*article One*/
 		.containerWrap{background-color: #d9c5da;}
 		.container{width: 1200px; height: 500px;margin: 0 auto; text-align: center;}
 		.container h2{padding: 80px 0 0 0;margin-bottom: 20px;}
 		/*article Two*/
-		.articleTwoWrap{width: 1200px; height: 500px; margin: 0 auto;}
+		.articleTwoWrap{width: 1200px; height: 500px; margin: 0 auto; overflow: hidden;}
 		.articleTwoWrap .articleTwo{float:left; width: 620px; margin: 120px 80px 0 0;}
 		.articleTwo h2{ margin: 20px 0 0 0; margin-bottom: 20px;}
 		.articleTwo p{margin-bottom: 20px;}
@@ -73,6 +75,8 @@
 			width: 150px; height: 50px; background-color: rgba(0,0,255,0.5);
 		}
 		.articleTwo .btn a{display: block; line-height: 30px;}
+		.articleTwo .btn:hover a{font-weight: bold;}
+
 		.articleTwoWrap .artIconWrap{
 			float:left; width: 480px; height: 500px; position: relative;
 		}
@@ -89,6 +93,7 @@
 			position: absolute; bottom: 70px; right: 50px;
 		}
 		.artIconWrap a{display: block;}
+		.artIconWrap a:hover img{width: 300px; height: 300px;}
 		/*article Three*/
 		.arttwWrap{background-color: #d9c5da; overflow:hidden;}
 		.arttwWrap .articleThreeWrap{width: 1200px; height: 500px; margin: 0 auto;}
@@ -104,6 +109,7 @@
 			width: 150px; height: 50px; background-color: rgba(0,0,255,0.5);
 		}
 		.articleThree .btn a{display: block; line-height: 30px;}
+		.articleThree .btn:hover a{font-weight: bold;}
 		.artImg .bg{background-color: #d9c5da;}
 		/*article Four*/
 		.articleFourWrap{width: 1200px; height: 500px; margin: 0 auto; text-align: center;}
@@ -145,12 +151,42 @@
 		.artImg img{width: 100%;}
 		.articleSix h2{ margin: 20px 0 0 0; margin-bottom: 20px;}
 		.articleSix p{margin-bottom: 20px;}
-		.articleSix .ac{font-size: 1.2em; font-weight: bold;}
+		.articleSix .ac{font-size: 1.2em;}
 		.articleSix .btn{
 			padding: 10px; border-radius: 25px; text-align: center; line-height: 30px;
 			width: 200px; height: 50px; background-color: rgba(0,0,255,0.5);
 		}
 		.articleSix .btn a{display: block; line-height: 30px;}
+		.articleSix .btn:hover a{font-weight: bold;}
+		/*footer*/
+		footer {background: #d9c5da;}
+		footer .fArtWrap{width: 1200px; height: 300px; margin: 0 auto;}
+		footer .fArtOne{position: relative; height: 200px; margin-bottom: 20px;}
+		footer .fArtOne .fArtOneLogoWrap,
+		footer .fArtOne .fArtOneAbout,
+		footer .fArtOne .fArtOneProduct,
+		footer .fArtOne .fArtOneCompany{
+			position: absolute;
+		}
+		.fArtOneLogoWrap{top: 20px;}
+		.fArtOneCompany{right: 0; top: 50px;}
+		.fArtOneProduct{right: 180px; top: 50px;}
+		.fArtOneAbout{right: 390px; top: 50px;}
+		.fArtOneLogoWrap p{margin-bottom: 20px;}
+		.fArtOneProduct h4,
+		.fArtOneCompany h4,
+		.fArtOneAbout h4{
+			margin-bottom: 35px;
+		}
+		.fArtOneProduct p,
+		.fArtOneCompany p,
+		.fArtOneAbout p{
+			color:gray;
+		}
+		.fArtTwo:before{content:""; display: block; width: 1200px; height: 2px; background-color: #000; margin-bottom: 3px;}
+		.fArtTwo .copy{float:left; width: 800px;}
+		.fArtTwo .service{float:left;width: 200px;}
+		.fArtTwo .policy{float:right;}
 	</style>
 </head>
 <body>
@@ -180,7 +216,7 @@
 				<div class="txt">
 					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptatibus?</p>
-					<a href="#"><div class="btn">Request Demo</div></a>
+					<div class="btn"><a href="#">Request Demo</a></div>
 				</div>
 			</div>
 			<div class="mSlider">
@@ -188,7 +224,7 @@
 				<div class="txt">
 					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptatibus?</p>
-					<a href="#"><div class="btn">Request Demo</div></a>
+					<div class="btn"><a href="#">Request Demo</a></div>
 				</div>
 			</div>
 			<div class="mSlider">
@@ -196,7 +232,7 @@
 				<div class="txt">
 					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptatibus?</p>
-					<a href="#"><div class="btn">Request Demo</div></a>
+					<div class="btn"><a href="#">Request Demo</a></div>
 				</div>
 			</div>
 			<div class="mSlider">
@@ -204,7 +240,7 @@
 				<div class="txt">
 					<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptatibus?</p>
-					<a href="#"><div class="btn">Request Demo</div></a>
+					<div class="btn"><a href="#">Request Demo</a></div>
 				</div>
 			</div>
 		</div>
@@ -221,7 +257,7 @@
 		<div class="articleTwo">
 			<h2>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Distinctio consequatur delectus omnis odit assumenda inventore, <br>nostrum ab quos aperiam ut!</p>
-			<a href="#"><div class="btn">Request Demo</div></a>
+			<div class="btn"><a href="#">Request Demo</a></div>
 		</div>
 		<div class="artIconWrap">
 			<div class="artIcon">
@@ -244,7 +280,7 @@
 			<div class="articleThree">
 				<h2>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Fugiat qui ex labore, <br>commodi architecto.</p>
-				<a href="#"><div class="btn">Explore Product</div></a>
+				<div class="btn"><a href="#">Explore Product</a></div>
 			</div>
 			<div class="artImg">
 				<div class="bg"><img src="images/artImg01.jpg" alt=""></div>
@@ -339,6 +375,59 @@
 			</div>
 		</div>
 	</div>
-
+	<!-- footer -->
+	<footer>
+		<div class="fArtWrap clearfix">
+			<div class="fArtOne">
+				<div class="fArtOneLogoWrap">
+					<div class="fArtOneLogo">
+						<a href="#"><img src="images/footer_logo.jpg" alt="logo"></a>
+					</div>
+					<p>
+						Built for every employee, everywhere
+					</p>
+					<p>
+						580 oras street <br>
+						Lan itail, DA 354130 <br>
+						steam@olution.com
+					</p>
+				</div>
+				<div class="fArtOneAbout">
+					<h4>ABOUT</h4>
+					<p>
+						<a href="#">Why solution</a> <br>
+						<a href="#">What We Do</a> <br>
+						<a href="#">Testimonials</a>
+					</p>
+				</div>
+				<div class="fArtOneProduct">
+					<h4>PRODUCT</h4>
+					<p>
+						<a href="#">How IT Works</a> <br>
+						<a href="#">Features</a> <br>
+						<a href="#">FAQ</a>
+					</p>
+				</div>
+				<div class="fArtOneCompany">
+					<h4>COMPANY</h4>
+					<p>
+						<a href="#">Team</a> <br>
+						<a href="#">Careers</a> 
+					</p>
+				</div>
+			</div>
+			<div class="fArtTwo">
+				<div class="copy">
+					<p>copyrightⓒ2020. Syed Roni behalf of isketch. All Rights Reserved.</p>
+				</div>
+				<div class="service">
+					<h4><a href="#">TERMS OF SERVICE</a></h4>
+				</div>
+				<div class="policy">
+					<h4><a href="#">PRIVACY POLICY</a></h4>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
