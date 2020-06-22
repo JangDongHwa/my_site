@@ -23,24 +23,7 @@
 		.header .navOne{
 			float:left; 
 		}
-		.header .navTwo{float:right;}
-		.header li{float:left; text-align: center;}
-		.header li a{display: block;}
-		.header .logo{margin-right: 200px;}
-		.header .navOne{width: 450px;}
-		.header .navOne li{height: 80px; line-height: 80px; margin-right: 45px;}
-		.header .navOne li:last-child{margin-right: 0;}
-		.header .navTwo{width: 200px;}
-		.header .navTwo li{height: 80px; line-height: 80px; margin-right: 45px;}
-		.header .navTwo li:last-child{margin-right: 0;}
-		.header .navTwo li:last-child a{
-			width: 80px; height: 80px;
-			background-color: rgba(0,0,225,0.5); border-radius: 15px;
-		}
-		.header li:hover{font-weight: bold;}
-		.header .navTwo li:last-child :hover{color:white;}
-		
-		/*.nav ul{position: relative;}
+		.nav ul{position: relative;}
 		.nav li{float:left; line-height: 80px; margin-left: 130px;}
 		.nav li:nth-child(2){margin-left: 45px;}
 		.nav li:nth-child(3){margin-left: 45px;}
@@ -48,12 +31,12 @@
 		.nav li:nth-child(5){margin-left: 270px;}
 		.nav li:nth-child(6){
 			width: 80px; height: 50px; background-color: rgba(0,0,255,0.5);
-			position: absolute; top: 14px; right: -140px; border-radius: 25px; 
+			position: absolute; top: 14px; right: 0; border-radius: 25px; 
 			text-align: center; line-height: 43px;
-		}*/
-		/*.nav li a{display: block;}
+		}
+		.nav li a{display: block;}
 		.nav li:hover{font-weight: bold;}
-		.nav li:last-child :hover{font-weight: bold; color:white;}*/
+		.nav li:last-child :hover{font-weight: bold; color:white;}
 		/*slider*/
 		.sliderWrap{width: 100%; margin: 0 auto;}
 		.slider{width: 100%; margin: 0 auto;}
@@ -75,7 +58,6 @@
 		.txt .btn{
 			padding: 10px; border-radius: 25px; text-align: center; line-height: 30px;
 			width: 150px; height: 50px; background-color: rgba(0,0,255,0.5);
-			box-shadow: 10px 10px 10px #eee;
 		}
 		.txt .btn a{display: block; line-height: 30px;}
 		.txt .btn:hover a{font-weight: bold;}
@@ -91,7 +73,6 @@
 		.articleTwo .btn{
 			padding: 10px; border-radius: 25px; text-align: center; line-height: 30px;
 			width: 150px; height: 50px; background-color: rgba(0,0,255,0.5);
-			box-shadow: 10px 10px 10px #ccc;
 		}
 		.articleTwo .btn a{display: block; line-height: 30px;}
 		.articleTwo .btn:hover a{font-weight: bold;}
@@ -126,7 +107,6 @@
 		.articleThree .btn{
 			padding: 10px; border-radius: 25px; text-align: center; line-height: 30px;
 			width: 150px; height: 50px; background-color: rgba(0,0,255,0.5);
-			box-shadow: 10px 10px 10px #ccc;
 		}
 		.articleThree .btn a{display: block; line-height: 30px;}
 		.articleThree .btn:hover a{font-weight: bold;}
@@ -138,12 +118,10 @@
 		.contentOneWrap .btnOne{
 			float:left; width: 200px;position: absolute; left: 50%; margin-left: -210px;
 			background-color: #eee; border-radius: 25px; line-height: 50px;
-			box-shadow: 10px 10px 10px #ccc;
 		}
 		.contentOneWrap .btnTwo{
 			float:left; width: 200px;position: absolute; left: 50%; margin-left: 10px;
 			background-color: #eee; border-radius: 25px; line-height: 50px;
-			box-shadow: 10px 10px 10px #ccc;
 		}
 		.contentOneWrap .btnOne:hover{border-radius: 25px; text-align: center; line-height: 50px;
 			width: 200px; height: 50px; background-color: rgba(0,0,255,0.5); font-weight: bold;}
@@ -154,17 +132,14 @@
 		.artFiveWrap{width: 1200px; height: 500px; margin: 0 auto;}
 		.articleFiveWrap{width: 1200px; height: 100px; margin: 25px 0; position: relative;}
 		.artContent{
-			padding:30px; width: 1200px; height: 100px;
+			padding:30px; width: 1200px; height: 100px; border: 0.1px solid #ccc;
 			background-color: #eee; border-radius: 50px; position: absolute; top: 30px;
-			box-shadow: 10px 10px 10px #ccc;
 		}
 		.artContent a{display: block;}
 		.articleFiveWrap .txt{float:left; position: absolute; top: 30px;  left: 80px; text-align: center;}
 		.articleFiveWrap .btn{float:right; position: absolute; top: 30px; right: 80px;}
 		.btn img{width: 100%;}
-		.artContent:hover{
-			background-color: #fff; border-radius: 50px; font-size: 1.5em; color: rgba(0,0,255,0.5);
-		}
+		.artContent:hover{background-color: #fff; border-radius: 50px;}
 		.artContent:hover .btn{color:#5462b2;}
 		/*article Six*/
 		.artswWrap{overflow: hidden;}
@@ -180,7 +155,6 @@
 		.articleSix .btn{
 			padding: 10px; border-radius: 25px; text-align: center; line-height: 30px;
 			width: 200px; height: 50px; background-color: rgba(0,0,255,0.5);
-			box-shadow: 10px 10px 10px #ccc;
 		}
 		.articleSix .btn a{display: block; line-height: 30px;}
 		.articleSix .btn:hover a{font-weight: bold;}
@@ -213,15 +187,6 @@
 		.fArtTwo .copy{float:left; width: 800px;}
 		.fArtTwo .service{float:left;width: 200px;}
 		.fArtTwo .policy{float:right;}
-		.fArtOneAbout p:hover,
-		.fArtOneProduct p:hover,
-		.fArtOneCompany p:hover{
-			font-weight: bold;
-		}
-		.fArtTwo .service h4:hover a,
-		.fArtTwo .policy h4:hover a{
-			color:white;
-		}
 	</style>
 </head>
 <body>
@@ -231,18 +196,14 @@
 			<div class="logo">
 				<a href="#"><img src="images/logo.jpg" alt=""></a>
 			</div>
-			<div class="navOne">
+			<div class="nav">
 				<ul class="clearfix">
 					<li><a href="#">Home</a></li>
 					<li><a href="#">How it Works</a></li>
 					<li><a href="#">Company</a></li>
 					<li><a href="#">Career</a></li>
-				</ul>
-			</div>
-			<div class="navTwo">
-				<ul class="clearfix">
 					<li><a href="#">Sign in</a></li>
-					<li><span class="deco"><a href="#">Register</a></span></li>
+					<li><a href="#">Register</a></li>
 				</ul>
 			</div>
 		</div>
@@ -434,33 +395,23 @@
 				<div class="fArtOneAbout">
 					<h4>ABOUT</h4>
 					<p>
-						<a href="#">Why solution</a>
-					</p>
-					<p>
-						<a href="#">What We Do</a>
-					</p>
-					<p>
+						<a href="#">Why solution</a> <br>
+						<a href="#">What We Do</a> <br>
 						<a href="#">Testimonials</a>
 					</p>
 				</div>
 				<div class="fArtOneProduct">
 					<h4>PRODUCT</h4>
 					<p>
-						<a href="#">How IT Works</a>
-					</p>
-					<p>
-						<a href="#">Features</a>
-					</p>
-					<p>
+						<a href="#">How IT Works</a> <br>
+						<a href="#">Features</a> <br>
 						<a href="#">FAQ</a>
 					</p>
 				</div>
 				<div class="fArtOneCompany">
 					<h4>COMPANY</h4>
 					<p>
-						<a href="#">Team</a>
-					</p>
-					<p>
+						<a href="#">Team</a> <br>
 						<a href="#">Careers</a> 
 					</p>
 				</div>
