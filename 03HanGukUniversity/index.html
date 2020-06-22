@@ -13,6 +13,7 @@
 	</script>
 	<style>
 		/*header*/
+		/*headerTop*/
 		.hWrap{background: #0044af;}
 		.hWrap .hTopWrap{width: 1200px; height: 40px; margin: 0 auto;}
 		.hTop .hTopLeft{float:left;}
@@ -28,7 +29,15 @@
 			color:#727272; background: #fff; 
 		}
 		.hTop .hTopRight li{float:right; line-height: 40px; margin-right: 10px;}
-		.hTop .hTopRight li a{display: block; color:white;}
+		.hTop .hTopRight li:nth-child(4){width: 45px;height: 40px;}
+		.hTop .hTopRight li:nth-child(4) a{width: 45px;height: 40px;}
+		.hTop .hTopRight li a{display: block; color:white;position: relative;}
+		.hTop .hTopRight li img{
+			height: 20px; display: block; 
+			position: absolute; top: 50%; margin-top: -10px;
+		}
+		.hTop .hTopRight li:hover a{font-weight: bold;}
+		/*headerNav*/
 		.hNav{
 			width: 1200px; margin: 0 auto; height: 115px; padding: 30px 0;
 		}
@@ -59,11 +68,12 @@
 						<li><a href="#">입학안내</a></li>
 						<li><a href="#">대학원</a></li>
 					</ul>
-					<ul class="hTopRight">
+					<ul class="hTopRight clearfix">
 						<li><a href="#">사이트맵</a></li>
 						<li><a href="#">ENGLISH</a></li>
 						<li><a href="#">찾아오시는길</a></li>
-						<li><a href="#">글자크기<img src="images/htopbtn.png" alt=""></a></li>
+						<li><a href="#"><img src="images/htopbtn.png" alt=""></a></li>
+						<li><a href="#">글자크기</a></li>
 					</ul>
 				</div>
 			</div>
