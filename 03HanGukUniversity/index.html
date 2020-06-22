@@ -13,8 +13,8 @@
 	</script>
 	<style>
 		/*header*/
-		/*headerTop*/
-		.hWrap{background: #0044af;}
+			/*headerTop*/
+			.hWrap{background: #0044af;}
 		.hWrap .hTopWrap{width: 1200px; height: 40px; margin: 0 auto;}
 		.hTop .hTopLeft{float:left;}
 		.hTop .hTopLeft ul{width: 400px;}
@@ -55,10 +55,26 @@
 		.hNav .navMenu li:last-child a{margin-right: 0;}
 		.hNav .navMenu li:hover a{color:#000; font-weight: bold;}
 		.hNav .toggle .tog{float:left;}
+		/*container*/
+		.container{
+			background: url(images/contents_bg.jpg) no-repeat center;
+			background-size: cover;
+		}
+		.container .conTopWrap{
+			width: 1200px; height: 260px; margin: 0 auto;
+		}
+		.container .conTopLeft{width: 640px; color:white; padding: 80px 5px;}
+		.conTopLeft{float:left;}
+		.conTopLeft h3{font-size: 1.5em;}
+		.conTopLeft h2{font-size: 3em;}
+		.conTopRight{float:right; padding: 60px 0;}
+		.conTopRight li{float:left; margin-left: 15px;}
+		.articleWrap{height: 900px; border: 1px solid #000;}
 
 	</style>
 </head>
 <body>
+	<!-- header -->
 	<header id="header">
 		<div class="hWrap">
 			<div class="hTopWrap">
@@ -79,27 +95,50 @@
 			</div>
 		</div>
 		<div class="hNav clearfix">
-					<div class="logo">
-						<a href="#"><img src="images/logo.jpg" alt=""></a>
-					</div>
-					<div class="navMenu">
-						<ul class="clearfix">
-							<li><a href="#">대학소개</a></li>
-							<li><a href="#">학과소개</a></li>
-							<li><a href="#">학사안내</a></li>
-							<li><a href="#">대학생활</a></li>
-							<li><a href="#">학생지원센터</a></li>
-						</ul>
-					</div>
-					<div class="toggle clearfix">
-						<div class="tog">
-							<a href="#"><img src="images/toggle01.jpg" alt=""></a>
-						</div>
-						<div class="tog">
-							<a href="#"><img src="images/toggle02.jpg" alt=""></a>
-						</div>
+			<div class="logo">
+				<a href="#"><img src="images/logo.jpg" alt=""></a>
+			</div>
+			<div class="navMenu">
+				<ul class="clearfix">
+					<li><a href="#">대학소개</a></li>
+					<li><a href="#">학과소개</a></li>
+					<li><a href="#">학사안내</a></li>
+					<li><a href="#">대학생활</a></li>
+					<li><a href="#">학생지원센터</a></li>
+				</ul>
+			</div>
+			<div class="toggle clearfix">
+				<div class="tog">
+					<a href="#"><img src="images/toggle01.jpg" alt=""></a>
+				</div>
+				<div class="tog">
+					<a href="#"><img src="images/toggle02.jpg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="conTopWrap">
+			<div class="conTop clearfix">
+				<div class="conTopLeft">
+					<div class="conTopTxt">
+						<h3>함께 나누며 세상을 이끌어</h3>
+						<h2>세계로향하는 한국대학교</h2>
 					</div>
 				</div>
-	</header>
+				<div class="conTopRight">
+					<ul class="clearfix">
+						<li><a href="#"><img src="images/contop_icon_01.png" alt=""></a></li>
+						<li><a href="#"><img src="images/contop_icon_02.png" alt=""></a></li>
+						<li><a href="#"><img src="images/contop_icon_03.png" alt=""></a></li>
+						<li><a href="#"><img src="images/contop_icon_04.png" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="articleWrap">
+				
+			</div>
+		</div>
+	</div>
 </body>
 </html>
