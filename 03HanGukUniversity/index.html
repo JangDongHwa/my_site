@@ -6,72 +6,10 @@
 	<title>HanGuk University</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
-	<script>
-		
-	</script>
-	<style>
-		/*header*/
-			/*headerTop*/
-			.hWrap{background: #0044af;}
-		.hWrap .hTopWrap{width: 1200px; height: 40px; margin: 0 auto;}
-		.hTop .hTopLeft{float:left;}
-		.hTop .hTopLeft ul{width: 400px;}
-		.hTop .hTopLeft li{
-			float:left; width: 120px;line-height: 40px; margin-right: 10px; text-align: center;
-		}
-		.hTop .hTopLeft li a{
-			display: block; color:white;
-			background: #00163b; border-radius: 10px 10px 0 0;
-		}
-		.hTop .hTopLeft li:hover a{
-			color:#727272; background: #fff; 
-		}
-		.hTop .hTopRight li{float:right; line-height: 40px; margin-right: 10px;}
-		.hTop .hTopRight li:nth-child(4){width: 45px;height: 40px;}
-		.hTop .hTopRight li:nth-child(4) a{width: 45px;height: 40px;}
-		.hTop .hTopRight li a{display: block; color:white;position: relative;}
-		.hTop .hTopRight li img{
-			height: 20px; display: block; 
-			position: absolute; top: 50%; margin-top: -10px;
-		}
-		.hTop .hTopRight li:hover a{font-weight: bold;}
-		/*headerNav*/
-		.hNav{
-			width: 1200px; margin: 0 auto; height: 115px; padding: 30px 0;
-		}
-		.hNav img{display: block;}
-		.hNav .logo{width: 210px; margin-right: 380px;}
-		.hNav .logo,
-		.hNav .navMenu{float:left;}
-		.hNav .toggle{float:right;}
-		.hWrap .hNav .logo a{}
-		.hNav .navMenu ul{width: 475px; margin-right: 45px;}
-		.hNav .navMenu li{float:left;}
-		.hNav .navMenu li a{
-			display: block; line-height: 55px; margin-right: 30px; color:#9d9d9d;
-		}
-		.hNav .navMenu li:last-child a{margin-right: 0;}
-		.hNav .navMenu li:hover a{color:#000; font-weight: bold;}
-		.hNav .toggle .tog{float:left;}
-		/*container*/
-		.container{
-			background: url(images/contents_bg.jpg) no-repeat center;
-			background-size: cover;
-		}
-		.container .conTopWrap{
-			width: 1200px; height: 260px; margin: 0 auto;
-		}
-		.container .conTopLeft{width: 640px; color:white; padding: 80px 5px;}
-		.conTopLeft{float:left;}
-		.conTopLeft h3{font-size: 1.5em;}
-		.conTopLeft h2{font-size: 3em;}
-		.conTopRight{float:right; padding: 60px 0;}
-		.conTopRight li{float:left; margin-left: 15px;}
-		.articleWrap{height: 900px; border: 1px solid #000;}
-
-	</style>
+	<script src="js/script.js"></script>
 </head>
 <body>
 	<!-- header -->
@@ -122,8 +60,8 @@
 			<div class="conTop clearfix">
 				<div class="conTopLeft">
 					<div class="conTopTxt">
-						<h3>함께 나누며 세상을 이끌어</h3>
-						<h2>세계로향하는 한국대학교</h2>
+						<p>함께 나누며 세상을 이끌어</p>
+						<h2>세계로 향하는 한국대학교</h2>
 					</div>
 				</div>
 				<div class="conTopRight">
@@ -135,8 +73,59 @@
 					</ul>
 				</div>
 			</div>
-			<div class="articleWrap">
-				
+			<div class="contentsWrap">
+				<ul class="clearfix">
+					<li class="sliderWrap">
+						<ul class="slider">
+							<li class="sliderHeight">
+								<img src="images/slider_img_01.jpg" alt="">
+								<div class="sTxt">
+									<p>
+										<span class="point">한국</span>에서<br>
+										<span class="point">시작</span>하는<br>
+										새로운 <span class="point">꿈</span>						
+									</p>
+									<div class=sBtn>
+										<p>자세히보기</p>
+									</div>
+								</div>
+							</li>
+							<li class="sliderHeight">
+								<img src="images/slider_img_02.jpg" alt="">
+								<div class="sTxt">
+									<p>
+										<span class="point">한국</span>에서<br>
+										<span class="point">시작</span>하는<br>
+										새로운 <span class="point">꿈</span>	
+									</p>
+									<div class=sBtn>
+										<p>자세히보기</p>
+									</div>
+								</div>
+							</li>
+							<li class="sliderHeight">
+								<img src="images/slider_img_03.jpg" alt="">
+								<div class="sTxt">
+									<p>
+										<span class="point">한국</span>에서<br>
+										<span class="point">시작</span>하는<br>
+										새로운 <span class="point">꿈</span>	
+									</p>
+									<div class=sBtn>
+										<p>자세히보기</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="app">도서관</li>
+					<li class="midContent">hotlink</li>
+					<li class="midContent">공지사항</li>
+					<li class="midContent">sns news</li>
+					<li class="midContent">캠퍼스투어</li>
+					<li class="botContent">video</li>
+					<li class="sliderTwo">slider2</li>
+				</ul>
 			</div>
 		</div>
 	</div>
