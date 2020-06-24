@@ -1,5 +1,11 @@
 $(document).ready(function(){
-	$(".slider").bxSlider({
+	var myslider = $(".slider").bxSlider({
 		auto:true, pager:false, controls:false
+	});
+	$(".nextBtn").click(function(){
+		myslider.goToNextSlide();
+	});
+	$(".prevBtn").click(function(){
+		myslider.goToPrevSlide();
 	});
 });
