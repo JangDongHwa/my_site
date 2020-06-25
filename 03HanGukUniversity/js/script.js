@@ -9,3 +9,8 @@ $(document).ready(function(){
 		myslider.goToPrevSlide();
 	});
 });
+$(document).ready(function(){
+	$(".sliderTwo").bxSlider({
+		auto:true, controls:false
+	});
+});

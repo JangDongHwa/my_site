@@ -48,8 +48,10 @@
 
 /*container*/
 .container{ height: 1310px;
-	background: url(../images/contents_bg.jpg) no-repeat center;
-	background-size: cover;
+	background-image: url(../images/00bg_dot.gif), url(../images/00main_bg01.jpg);
+	background-repeat: repeat, no-repeat;
+	background-position: center;
+	background-size: auto,cover;
 }
 .box{
 	background: #192d4e;width: 170px; height: 40px;
@@ -64,7 +66,7 @@
 .conTopLeft h2{font-size: 3em;}
 .conTopRight{float:right; padding: 60px 0;}
 .conTopRight li{float:left; margin-left: 15px;}
-.contentsWrap{height: 900px;}
+.contentsWrap{height: 900px; margin-bottom: 20px;}
 .contentsWrap li{float:left; width: 25%; height: 225px; color:white;}
 .contentsWrap .sliderWrap{
 	background: red; width: 75%; height: 450px; position: relative;
@@ -93,6 +95,7 @@
 .sTxt span.point{font-weight: bold;}
 .sTxt .sBtn p{font-size: 16px;}
 .sTxt .sBtn p a{display: block; color:white;}
+/*app*/
 .contentsWrap .app{
 	height: 450px; 
 	background-image: url(../images/app_bg.jpg);
@@ -110,6 +113,7 @@
 .wrap .aBtn p{padding: 0;}
 .wrap .aBtn{margin: auto;}
 .wrap .aBtn a{display: block; color:white;}
+/*midContent*/
 .midContent h2{padding: 20px;margin-bottom: 10px;}
 .midContent.hotLink{background: #00163b;}
 .hotLink .hIcon div{
@@ -130,13 +134,82 @@
 .midContent.sns{background: #fff;}
 .sns h2{color:#02163c;}
 .sns .artWrap{
-	width: 270px; height: 140px; margin: auto;
+	width: 270px; height: 80px; margin: auto;
 	position: relative;
 }
 .artWrap img{display: block; position: absolute; top: 0;left: 10px;}
 .artWrap p{
 	font-size:11px; color:#999;
-	position: absolute; top: 10px; right: 20px;}
+	position: absolute; top: 10px; right: 20px;
+}
+.midContent .snsIcon{
+	width: 270px; height: 30px; margin: auto;
+}
+.snsIcon>ul>li{
+	float:right; width: 30px; height: 30px;
+	background-image: url(../images/sns_icon_sprite.png);
+	background-repeat: no-repeat;
+}
+.snsIcon>ul>li:nth-child(1){background-position: -424px -216px;}
+.snsIcon>ul>li:nth-child(2){background-position: -455px -277px;}
+.snsIcon>ul>li:nth-child(3){background-position: -392px -277px;}
+.snsIcon>ul>li:nth-child(4){background-position: -424px -246px;}
+.snsIcon>ul>li>a{display: block; line-height: 30px; text-indent: -9999px;}
+.midContent.tour{position: relative; overflow:hidden;}
+.tour .overlay{
+	width: 300px; height: 225px; position: absolute; top: 175px; 
+	background-color: rgba(0,0,0,0.5); transition: 0.8s;
+}
+.tour .overlay .tTxt{
+	text-align: center;
+	color:#fff; position: absolute;
+	left: 50%; margin-left: -85.622px;
+}
+.tTxt h2{padding: 10px 0 0 0; margin-bottom: 50px;}
+.midContent.tour:hover .overlay{top: 0;}
+/*botContent*/
+.botContent{position: relative;}
+.botContent .overlay{
+	width: 300px; height: 225px; position: absolute; top: 0; 
+	background-color: rgba(63,73,171,0.5);
+}
+.botContent .overlay .bStart{
+	width: 80px; height: 80px; text-align: center; line-height: 80px;
+	color:#fff; background: rgba(0,0,0,0.5); border-radius: 75px;
+	position: absolute;
+	top: 50%; margin-top: -40px; left: 50%; margin-left: -40px;
+}
+.overlay .bStart a{
+	margin: auto; line-height: 95px;
+	}
+.contentsWrap .sliderTwoWrap{width: 75%; position: relative;}
+.sliderTwo .sTxt{
+	width: 400px; position: absolute; top: 20px; left: 30px; 
+	font-size: 1.5em; color:#fc523b;
+}
+.sliderTwo .sTxt .bold{font-size: 2em; font-weight: bold;}
+.sTxt .box.sTwBtn{
+	background: #e3372b;
+}
 
-.contentsWrap .sliderTwo{width: 75%;}
+.sTxt .sTwBtn p{font-size: 16px;}
+.sTxt .sTwBtn a{display: block; color: #fff;}
 
+.bx-wrapper .bx-pager{
+   position: absolute; top: 0; right: -380px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #f84237;
+}
+/*memo*/
+.memo{width: 1200px; height: 60px; background: #fff;}
+.memo .memoLeft{float: left; width: 25%; text-align: center;}
+.memoLeft .title,
+.memoLeft .date{
+	float: left; width: 150px; line-height: 60px;color:#1a3055;
+	font-weight: bold;
+}
+.memoLeft .title{}
+.memo .line{float:left; width: 0;height: 60px; border-right: 2px solid #cdcdcd;
+	text-indent: -9999px;}
+.memo .memoRight{width: 75%;}
