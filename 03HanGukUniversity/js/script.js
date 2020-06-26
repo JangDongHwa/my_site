@@ -14,3 +14,14 @@ $(document).ready(function(){
 		auto:true, controls:false
 	});
 });
+$(document).ready(function(){
+	var mysliderTwo = $(".sliderThree").bxSlider({
+		mode:'vertical',pager:false,controls:false
+	});
+	$(".nextBtnTwo").click(function(){
+		mysliderTwo.goToNextSlide();
+	});
+	$(".prevBtnTwo").click(function(){
+		mysliderTwo.goToPrevSlide();
+	});
+});
