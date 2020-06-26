@@ -8,13 +8,9 @@ $(document).ready(function(){
 	$(".prevBtn").click(function(){
 		myslider.goToPrevSlide();
 	});
-});
-$(document).ready(function(){
 	$(".sliderTwo").bxSlider({
 		auto:true, controls:false
 	});
-});
-$(document).ready(function(){
 	var mysliderTwo = $(".sliderThree").bxSlider({
 		mode:'vertical',pager:false,controls:false
 	});
