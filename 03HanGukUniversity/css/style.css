@@ -42,7 +42,7 @@
 	display: block; line-height: 55px; margin-right: 30px; color:#333;
 }
 .hNav .navMenu li:last-child a{margin-right: 0;}
-.hNav .navMenu li:hover a{color:#000; font-weight: bold;}
+.hNav .navMenu li:hover a{color:#333; font-weight: bold;}
 .hNav .toggle .tog{float:left;}
 
 
@@ -165,7 +165,7 @@
 	color:#fff; position: absolute;
 	left: 50%; margin-left: -85.622px;
 }
-.tTxt h2{padding: 10px 0 0 0; margin-bottom: 50px;}
+.tTxt h2{padding: 10px 0 0 0; font-size:1.2em; margin-bottom: 50px;}
 .midContent.tour:hover .overlay{top: 0;}
 /*botContent*/
 .botContent{position: relative;}
@@ -209,7 +209,40 @@
 	float: left; width: 150px; line-height: 60px;color:#1a3055;
 	font-weight: bold;
 }
-.memoLeft .title{}
 .memo .line{float:left; width: 0;height: 60px; border-right: 2px solid #cdcdcd;
 	text-indent: -9999px;}
-.memo .memoRight{width: 75%;}
+.memo .memoRight{width: 898px; float: right; height: 60px;}
+.memoRight .sliderThree .sliderThContent{height: 60px; position: relative;}
+.memoRight .sliderThree  .sliderThContent p{
+	font-size: 11px; color:#6d6d6d;
+	position: absolute;
+	top:50%; margin-top:-7px;left: 50%; margin-left: -442px;
+}
+.sliderThContent .bPoint{font-weight: bold; margin-right: 150px;}
+
+.sliderThContent .prevBtnTwo{
+	height: 28px; position: absolute; top: 0;right: 0; 
+	cursor:pointer;
+}
+.sliderThContent .nextBtnTwo{
+	height: 28px; position: absolute; bottom: 0; right: 0;
+	cursor:pointer;
+}
+/*footer*/
+.fWrap{width: 1200px; margin: auto; padding: 30px 0;}
+.fWrap .fLogo,
+.fWrap .fMenu{float: left;}
+.fLogo{width: 300px; padding: 25px 30px; margin-right: 10px;}
+.fMenu{}
+.fMenu li{
+	float: left; font-size: 11px; font-weight: bold; color: #818181;
+	margin-left: 19px; margin-right: 19px; position: relative;
+}
+.fMenu li:after{
+	content:""; display: block; width: 2px; height: 15px; 
+	background: #818181; position: absolute; top: 0; right: -19px;
+}
+.fMenu li:last-child:after{content:""; display: none;}
+.fMenu li a{display: block;}
+.fMenu p{padding: 15px 19px;font-size: 11px; color:#bbb;}
+.fMenu .copy{padding: 0 19px; color:#6d6d6d;}
