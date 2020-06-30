@@ -1,0 +1,163 @@
+@charset "utf-8";
+/*header*/
+.hWrap{
+	width: 1100px; height: 80px; margin: auto;position: relative;
+	margin-bottom: 20px;
+}
+.hWrap>.logo{width: 200px; padding: 15px 0;}
+.hWrap li{
+	float: left; position: absolute; right: 0;
+	top: 50%; margin-top: -10.5px;
+}
+.hWrap li:nth-child(1){
+	right: 235px;
+}
+.hWrap li:nth-child(2){
+	right: 130px;
+}
+.hWrap li:nth-child(3){
+	right: 0;
+}
+.hWrap li a{color:#504f5f;}
+.hWrap li:hover a{color:#202344; font-weight: bolder;}
+
+/*visual*/
+.visualWrap{
+	width: 1100px; height: 700px; margin: auto; position: relative;
+	margin-bottom: 50px;
+}
+.visualWrap .visual{position: absolute; top: 0; left: -400px;}
+.visualWrap p{
+	position: absolute; top: 180px; font-size: 3em; font-weight: bolder;
+	color:#202543;
+}	
+.visualWrap a{
+	position: absolute; top: 450px; left: 0; 
+	text-align: center; line-height: 50px;
+	width: 265px; height: 50px; color:white;
+	background: #444daa;
+}
+
+/*contentOne*/
+.container h3{
+	text-align: center;font-size:2.3em; margin-bottom: 50px;
+	color:#202543;
+}
+.container p{
+	text-align: center; color:#504f5f; margin-bottom: 30px;
+}
+.contentOne{width: 1100px; margin: auto; margin-bottom: 50px;}
+.contentOne>ul>li{float:left; width: 300px; margin-right: 100px;}
+.contentOne>ul>li:last-child{margin-right: 0;}
+.contentOne>ul>li>a>p.conTitle{
+	font-size: 1.5em; font-weight: bold; color:#202543;
+}
+.contentOne .conOneDeco:hover{
+	box-shadow: 10px 10px 10px #ccc, -10px -10px 10px #ccc, -10px 10px 10px #ccc, 10px -10px 10px #ccc;
+	transition: 1.5s;
+}
+
+/*contentTwo*/
+.contentTwo{
+	width: 1100px; margin: auto; margin-bottom: 50px;
+}
+.contentTwo>p{margin-bottom: 50px;}
+.contentTwo .conAni>li{
+	 float: left; margin-right: 100px;
+}
+.contentTwo .conAni>li:last-child{margin-right: 0;}
+.contentTwo .conAni>li>a{display: block;height: 350px; position: relative;}
+.contentTwo .conAni h4{
+	position: absolute; left: 20px; top: 220px;
+	font-size: 2em; color:white;
+}
+.conAni .aniTxt{position: relative;height: 150px;}
+.conAni .aniTxt p {
+	text-align: left; color:##202543; padding: 0 10px;
+}
+.aniTxt .aniTitle {font-weight: bold;}
+.aniTxt .aniPrice{
+	position: absolute; top: 79px; right: 0;
+	color: #ff8751; font-weight: bold;
+}
+.aniTxt .aniPrice:hover{
+	background: #ff8751;
+	border-radius: 20px; color:#fff;
+}
+.aniTxt p a{color:#494cad;}
+
+/*contentThree*/
+.contentThree{
+	width: 1100px; margin: auto; margin-bottom: 50px;
+}
+.contentThree p{text-align: left;}
+/*conThArtOne*/
+.contentThree .conThArtOne{margin-bottom: 30px;}
+.contentThree .conThImg{float: left; width: 300px; margin-right: 70px;}
+.conThTxt .article{ font-size: 1.8em; color:#202543;}
+.conThTxt .people:before{
+	content:""; float: left; width: 0;
+	height: 48px; border-right: 2px solid #444da8;
+	margin-right: 5px; margin-top: 7px;
+}
+.conThTxt .name{font-size: 1.8em; color: #202543;}
+/*conThArtTwo*/
+.conThArtTwo{ height: 316px; margin-bottom: 30px;}
+.conThArtTwo .conThTxt{float: left; margin-right: 70px;}
+.conThArtTwo .conThImg{float: right;}
+.conT
+/*conThArtThree*/
+.conThArtThree{
+	width: 1100px; margin: auto;
+}
+.conThArtThree h3,
+.conThArtThree p{text-align: left;}
+.conThArtThree p{font-weight: bolder;}
+.conThArtThree .conThImgThree,
+.conThArtThree .conTxtWrap{
+	float: left;
+}
+.conThArtThree .conThImgThree{
+	margin-right: 150px;
+}
+.conThArtThree .conTxtWrap{
+	width: 550px;
+}
+.btnWrap{position: relative;}
+.btnWrap .btn{
+	position: absolute; top: 15px; left: 0; 
+	text-align: center; line-height: 50px;
+	width: 265px; height: 50px; color:white;
+	background: #444daa;
+}
+/*contentfour*/
+.contentFour{width: 1100px; margin: auto; margin-bottom: 50px;}
+.contentFour p{text-align: left;}
+.contentFour ul li{
+	width: 500px; float: left; 
+	margin-right: 100px; margin-bottom: 10px;
+	border: 1px solid #ddd; border-radius: 20px;
+	padding: 30px;
+}
+.contentFour ul li:nth-child(2){margin-right: 0;}
+.contentFour ul li:nth-child(4){margin-right: 0;}
+.contentFour ul li:hover{background: #eee;}
+.contentFour ul li a{display: block;}
+.contentFour ul li .txtCap{font-size: 1.2em; font-weight: bolder;}
+
+/*footer*/
+#footer{border-top: 1px solid #eee;}
+#footer .fWrap{
+	width: 1100px; margin: auto; padding: 30px 0;
+}
+.fWrap img{float: left; display: block;}
+.fWrap ul{float: right; text-align: center;}
+.fWrap ul li{
+	width: 60px; height: 60px; float: left; margin-right: 30px;
+	border: 1px solid #000; border-radius: 30px; position: relative;
+}
+.fWrap ul li:nth-child(1){background: #444daa;}
+.fWrap ul li img{
+	position: absolute; 
+	top: 50%; margin-top: -15px; left: 50%; margin-left: -15px;
+}
