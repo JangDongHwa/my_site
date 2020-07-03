@@ -3,43 +3,29 @@
 .fr{float: right;}
 /*header*/
 #header{
-	height: 90px;
-	background-image: url(../images/header_top_bg.jpg);
-	background-repeat: no-repeat;
+	background: url(../images/header_top_bg.jpg) no-repeat ; 
 }
-	/*header_top*/
+	/*headertop*/
 	.htWrap{
-		width: 980px; margin: auto; text-align: center; line-height: 90px;
+		width: 980px; height: 90px; margin: 0 auto; position: relative;
 	}
 	.htWrap h1{color:white;}
-	.logo{width: 146px; padding: 0 35px; margin-right: 110px;}
-	.searWrap{
-		width: 290px; height: 90px; padding: 30px 0;
+	.htWrap .logo, .htWrap .search,
+	.htWrap .contact{position: absolute;}
+	.logo{left: 0; top: 20px;}
+	.search{width: 290px; left: 200px; top: 20px;}
+	.search_bor{
+		background: #fff; border-radius: 30px; text-align: center;
+		line-height: 20px;
 	}
-	.search_bor{width: 290px; height: 21px; background: #fff;position: relative;}
-	.inp{height: 21px; position: absolute;top: 0;}
-	.inp:nth-child(1){left: 0;top: -35px;}
-	.inp:nth-child(2){left: 65px;top: 0px;}
-	.inp:nth-child(3){right: 7px;top: 0px;}
-	.htWrap ul{}
-	.htWrap ul li{
-		line-height: 90px;		
-	}
-	.htWrap ul li a{
-		display: inline-block; width: 24px; height: 24px; margin-left: 4px;
-		vertical-align: middle;
-		background-image: url(../images/util_sns_sprite01.png);
-		background-repeat: no-repeat;
-	}
-	.htWrap ul li:nth-child(2) a{
-		margin-left: 10px;
-	}
-	.htWrap ul li:nth-child(3) a{
-		background-position: -30px 0;
-	}
-	.htWrap ul li:nth-child(4) a{
-		background-position: -60px 0;
-	}
-	.htWrap ul li:nth-child(5) a{
-		background-position: -90px 0;
-	}
+	.contact{right: 0; top: 20px;}
+	.contact li{width: 24px; line-height: 43px; margin-left: 6px; padding: 10px 0;}
+	.contact li:nth-child(2){margin-left: 15px;}
+	.contact li a{
+		background: url(../images/util_sns_sprite01.png), no-repeat;
+		display: block; text-align: center;  height: 24px; text-indent: -9999px;
+		}
+	.contact li:nth-child(2) a{background-position: 0 0;}
+	.contact li:nth-child(3) a{background-position: -30px 0;}
+	.contact li:nth-child(4) a{background-position: -60px 0;}
+	.contact li:nth-child(5) a{background-position: -90px 0;}
