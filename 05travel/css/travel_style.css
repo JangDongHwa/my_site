@@ -16,16 +16,21 @@
 	.search{width: 290px; left: 200px; top: 20px; background: #fff;}
 	.search_bor{
 		background: #fff; border-radius: 30px; text-align: center;
-		line-height: 20px;
+		line-height: 90px;
+	}
+	.mainSearch legend{text-indent:-9999px; font-size:0;}
+	.mainSearch button{
+		width: 21px; height: 21px; 
+		background: url(../images/header_top_btn.jpg) no-repeat 50%;
+		border:0 none;
 	}
 	.contact{right: 0; top: 20px;}
 	.contact li{width: 24px; line-height: 43px; margin-left: 6px; padding: 10px 0;}
-	.contact li:nth-child(2){margin-left: 15px;}
 	.contact li a{
 		background: url(../images/util_sns_sprite01.png), no-repeat;
 		display: block; text-align: center;  height: 24px; text-indent: -9999px;
 		}
-	.contact li:nth-child(2) a{background-position: 0 0;}
-	.contact li:nth-child(3) a{background-position: -30px 0;}
-	.contact li:nth-child(4) a{background-position: -60px 0;}
-	.contact li:nth-child(5) a{background-position: -90px 0;}
+	.contact li:nth-child(1) a{background-position: 0 0;}
+	.contact li:nth-child(2) a{background-position: -30px 0;}
+	.contact li:nth-child(3) a{background-position: -60px 0;}
+	.contact li:nth-child(4) a{background-position: -90px 0;}
