@@ -20,4 +20,7 @@ $(document).ready(function(){
 	$(".prevBtnTwo").click(function(){
 		mysliderTwo.goToPrevSlide();
 	});
+	$(".modal").colorbox({
+		iframe:true, innerWidth:560, innerHeight:315
+	});
 });

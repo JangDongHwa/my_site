@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>form</title>
+<!-- 	<link rel="stylesheet" href="css/animate.css">
+	<script src="js/wow.js"></script> -->
+	<style>
+		*{padding:0; margin:0; box-sizing:border-box;}
+		html,body{height: 100%;}
+		body{
+			background-image: url(images/bg02.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			overflow-y:scroll; overflow-x:hidden;
+		}
+		.searchInp{
+			width: 400px; height: 50px; border:3px solid #000; border-radius:25px; text-indent:80px; font-size:18px; font-weight:bold; box-shadow:10px 10px 30px #ccc; position: relative; z-index:1;
+		}
+		.searchBtn{
+			width:20px; height:20px; background:url(images/header_top_btn.jpg) no-repeat; text-indent:-9999px; border:0 none; position: absolute; right:20px; top:15px; z-index:2;
+		}
+		.searchTitle{
+			width: 60px; height: 20px; background: url(images/searchtext.jpg) no-repeat 50%;
+			text-indent:-9999px; display: block;
+			position: absolute; top: 15px; left:15px; z-index:2;
+		}
+		.wrap{
+			position: absolute; width: 400px; height: 50px; left:50%; top:50%; transform:translate(-50%,-50%); z-index:1;
+		}
+		.img01{
+			position: absolute; right: -100px; top: -250px; animation-name:ball;
+			animation-duration:15s; animation-iteration-count:infinite; 
+		}
+		/*@keyframes ball{
+			0%{top:-300px;}
+			25%{top: -275px;}
+			50%{top: -250px;}
+			75%{top: -275px;}
+			100%{top:-300px;}
+		}*/
+		@keyframes ball{
+			0%{transform:translateY(0px);}
+			25%{transform:translateY(-25px);}
+			50%{transform:translateY(-50px);}
+			75%{transform:translateY(-25px);}
+			75%{transform:translateY(0px);}
+		}
+		.img00{
+			position: absolute; left:-500px; bottom:-500px; animation-name:air;
+			animation-duration:5s; /*animation-fill-mode:forwards;*/animation-iteration-count:infinite; z-index:0;
+		}
+		@keyframes air{
+			0%{left: -500px; bottom: -500px;}
+			100%{left:2000px; bottom:1500px;}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<img src="images/content2.png" alt="" class="img01" >
+		<form action="#" method="get">
+			<label for="searchTxt" class="searchTitle">SEARCH</label>
+			<input type="text" name="searchTxt" id="searchTxt" placeholder="검색어를 입력해 주세요" class="searchInp">
+			<button type="submit" class="searchBtn">search</button>
+		</form>
+	</div>
+	<img src="images/reallyAir.png" alt="" class="img00">
+</body>
+</html>
