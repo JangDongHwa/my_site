@@ -9,20 +9,23 @@
 	}
 	.htWrap h1{color:white;}
 	.htWrap .logo, .htWrap .mainSearch,
-	.htWrap .contact{position: absolute;}
+	.htWrap .contact{position:absolute;}
 	.logo{left: 0; top: 20px;}
-	.search{width: 290px; left: 200px; top: 20px; background: #fff;}
 	.mainSearch{width: 290px; left: 200px; top: 20px;}
 	.search_bor{
-		width: 290px; height: 43px; background: #fff; border-radius: 30px; line-height: 20px; overflow:hidden;position:absolute;
+		width: 290px; height: 43px; border:0 none;
+		overflow:hidden;
 	}
 	.mainSearch legend{text-indent:-9999px; font-size:0;}
-	.mainSearch label{position:absolute; left:10px; top:10px; vertical-align:middle;z-index:2;}
-	.mainSearch input{width: 290px;height: 43px; position:absolute; left:0;top:0; text-align:center;vertical-align:middle; border:0 none;}
+	.mainSearch label{text-indent:-9999px; width: 60px; background:url(../images/searchtext.jpg) no-repeat 50%; position:absolute; left:10px; top:10px; vertical-align:middle;z-index:2;}
+	.mainSearch input{
+		width: 290px;height: 43px; position:absolute; left:0;top:0; 
+		text-align:center;vertical-align:middle; border:0 none;  background: #fff; line-height: 20px;  border-radius: 30px;
+	}
 	.mainSearch button{
 		width: 20px; height: 20px; 
 		background: url(../images/header_top_btn.jpg) no-repeat 50%;
-		border:0 none; position:absolute;right: 10px; top: 10px; z-index:1;vertical-align:middle;
+		border:0 none; position:absolute;right: 10px; top: 10px; z-index:1; vertical-align:middle;
 	}
 	.contact{right: 0; top: 20px; overflow:hidden;}
 	.contact h1{float:left;}
