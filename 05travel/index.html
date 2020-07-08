@@ -56,14 +56,52 @@
 			<div class="conOne clearfix">
 				<div class="conOneBg"></div>
 				<div class="conOneMenuWrap">
-					<div class="conOneMenu">공항예약</div>
-					<div class="conOneMenu">호텔예약</div>
-					<div class="conOneMenu">렌트카</div>
-					<div class="conOneMenu">휴양지</div>
+					<div class="conOneMenu"><a href="#">공항예약</a></div>
+					<div class="conOneMenu"><a href="#">호텔예약</a></div>
+					<div class="conOneMenu"><a href="#">렌트카</a></div>
+					<div class="conOneMenu"><a href="#">휴양지</a></div>
 				</div>
 				<div class="formWrap">
-					<form action="#" method="get">
-					
+					<form action="#" method="get" class="formLayer">
+						<fieldset>
+							<legend>여행일정</legend>
+							<ul>
+								<li>
+									<label for="golo">가고 싶은 나라를 선택하세요.</label>
+									<select name="nara" id="golo">
+										<option value="">선택하세요</option>
+										<option value="미국">미국</option>
+										<option value="일본">일본</option>
+										<option value="중국">중국</option>
+									</select>
+								</li>
+								<li>
+									<div class="left">
+										<label for="sDate">출발일</label>
+										<input type="date" id="sDate"placeholder="2020/07/01">
+									</div>
+									<div class="right">
+										<label for="eDate">도착일</label>
+										<input type="date" id="eDate"placeholder="2020/07/01">
+									</div>
+								</li>
+								<li>
+									<div class="left">
+										<label for="cgrade">좌석등급</label>
+										<select name="cgrade" id="cgrade">
+											<option value="퍼스트">퍼스트</option>
+											<option value="비지니스">비지니스</option>
+											<option value="이코모니">이코노미</option>
+										</select>
+									</div>
+									<div class="right">
+										<label for="num">인원</label>
+										<input type="number" id="num">
+									</div>
+								</li>
+							</ul>
+						</fieldset>
+						<button type="submut" class="tBtn">검색하기</button>
 					</form>
 				</div>
 				<div class="conOneTxt">
@@ -71,8 +109,35 @@
 				<p>지금, 여행이 떠나고 싶다면?<br>
 				하이미디어와 여행을 떠나자!</p>
 				</div>
+				<div class="gWrap">
+					<div class="french">
+						<img src="images/C_img01.jpg" alt="">
+						<div class="gBody freTxt">
+							프랑스
+						</div>
+					</div>
+					<div class="japan">
+						<img src="images/C_img02.jpg" alt="">
+						<div class="gBody japTxt">
+							일본
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="conTwo">
+				<div class="contentInfor"></div>
+				<div class="contentInfor"></div>
+				<div class="contentInfor"></div>
+				<div class="contentInfor"></div>
+				<div class="contentInfor"></div>
+				<div class="contentInfor"></div>
+				<div class="contentInfor"></div>
+				<div class="contentInfor"></div>
 			</div>
 		</div>
+	</div>
+	<div id="footer">
+		
 	</div>
 </div>	
 </body>
