@@ -49,6 +49,7 @@
 #nav_gnb ul>li:last-child:after{content:""; display:none;}
 #nav_gnb ul>li>a{width: 162.33px; display:block; float:left; color:#16272f; font-weight:bold;}
 /*contents*/
+#contents h4{color:white;}
 .conBg{
 	width: 100%; height: 1123px;
 	background:url(../images/C_bg02.jpg) no-repeat center; 
@@ -73,7 +74,7 @@
 .formLayer fieldset{border:0 none; margin-bottom:20px;}
 .formLayer legend{display:block; position:absolute; left:0; top:-9999px;}
 .formLayer label{display:block; width: 100%; padding:5px 0; font-weight:bold;}
-.formLayer select{ width:100%; height:40px; font-size:1em; text-indent:10px; border-radius:7px;}
+.formLayer select{ width:100%; height:40px; font-size:1em; text-indent:10px;}
 .formLayer .left,
 .formLayer .right{float:left; width:160px;}
 .formLayer .left{margin-right:10px;}
@@ -89,7 +90,7 @@
 	position:absolute; right: 233px; bottom:460px;
 }
 .conOneTxt p{font-size:1.5em;}
-.gWrap{width: 482px;height: 240px; background: pink; 
+.gWrap{width: 482px;height: 240px;
 	position:absolute; bottom: 0; left: 0; overflow:hidden;
 }
 .french, .japan{height: 240px;}
@@ -98,7 +99,35 @@
 .freTxt{bottom: 0; left: 0;}
 .japTxt{bottom: 0; right: 0;}
 
-.conTwo{width: 980px; height: 495px; margin: auto; background: red; position: relative}
-
+.conTwo{width: 980px; height: 495px; margin: auto; position: relative}
+.contentInfor{width: 233px; height: 240px; float:left; margin:0 16px 15px 0;}
+.contentInfor:nth-child(4){margin-right:0;}
+.contentInfor:nth-child(5){margin-bottom:0;}
+.contentInfor:nth-child(6){margin-bottom:0;}
+.contentInfor:nth-child(7){margin-bottom:0;}
+.contentInfor:nth-child(8){margin:0;}
+.content
+.slider li{position:absolute;}
+.conInfTxt{
+	width: 233px; height: 60px; position: absolute; bottom:0;
+}
+.pointColorG{background: #529351; padding:15px 0 0 17px;}
+.pointColorB{background: #152630; padding:15px 0 0 17px;}
+.star{ height: 13px; background: url(../images/C-img03_1.png) no-repeat;}
+.starB{ height: 13px; background: url(../images/C-img04_1.png) no-repeat;}
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+     box-shadow: none; 
+     border: 0 none; 
+     margin-bottom:0;
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+	display:none;
+}
+.cInfWeather{background:url(../images/C_img05.jpg); padding:22px 0 0 0;}
+.cInfWeather>h4{text-align:center;}
+.cInfPoint{bottom:255px; background: rgba(42,40,53,0.7); padding:13px 0 0 18px;}
+.cInfPoint>p{color:#909196; font-size:11px;}
+.cInfPerson{background: url(../images/C_img06.jpg);}
 #footer{width: 980px; height: 113px; margin: auto; background: #fff;}
-
