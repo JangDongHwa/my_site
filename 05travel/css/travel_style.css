@@ -95,9 +95,10 @@
 }
 .french, .japan{height: 240px;}
 .french{float:left;margin:0 16px 0 0;}
-.gBody{width: 233px; height: 50px; background: #152630;position:absolute; line-height:50px; color:white;}
+.gBody{width: 233px; height: 50px; background: #152630; padding:0 0 0 10px; position:absolute; line-height:50px; color:white;}
 .freTxt{bottom: 0; left: 0;}
 .japTxt{bottom: 0; right: 0;}
+.gbPoint{color:#6dc466; margin-left:30px;}
 
 .conTwo{width: 980px; height: 495px; margin: auto; position: relative}
 .contentInfor{width: 233px; height: 240px; float:left; margin:0 16px 15px 0;}
@@ -130,4 +131,31 @@
 .cInfPoint{bottom:255px; background: rgba(42,40,53,0.7); padding:13px 0 0 18px;}
 .cInfPoint>p{color:#909196; font-size:11px;}
 .cInfPerson{background: url(../images/C_img06.jpg);}
-#footer{width: 980px; height: 113px; margin: auto; background: #fff;}
+.cInfPerson h5{color:#494748; margin-bottom:10px;}
+.infPerTxt{height:105px; padding:18px 0 0 15px; background:url(../images/C-img06_1.png) no-repeat; background-position:15px 93px;}
+.infPerTxt p{color:#54749d;font-size:11px;}
+.cInfTravel{bottom:255px; background: #44619d; padding:13px 0 0 18px;}
+.cInfTravel>p{color:#909196; font-size:11px;}
+.cInfAir{background:url(../images/C_img07.jpg); position: relative;}
+.barWrap{width: 40px; height:40px; border: 3px solid #fff; border-radius:20px;box-sizing:border-box; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); transition:0.5s; z-index:1;}
+.barWrap .bar1,
+.barWrap .bar2{width: 25px; height:3px; background:#fff; border-radius:2px; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);} 
+.barWrap .bar2{transform: translate(-50%,-50%) rotate(90deg);}
+.bg{width: 100%;height: 100%; background:#000; position:relative; opacity:0.5; transition:0.5s;}
+.bg_color1{background: #9ad6e1;}
+.bg_color2{background: #373743;}
+.bg_color3{background: #262930;}
+.bg_color4{background: #4e997b;}
+.Txt{color:white; text-align:center; padding:10px 0;}
+.contentInfor:hover .bg{opacity:0.9;}
+.contentInfor:hover .TxtChange{position:absolute; bottom:0;}
+.cInfFood{background:url(../images/C_img08.jpg); position: relative;}
+.cInfHotel{background:url(../images/C_img09.jpg); position: relative;}
+.cInfCustomer{background:url(../images/C_img10.jpg);position: relative;}
+
+#footer{width: 980px; height: 113px; margin: auto; background: #fff; padding:30px 0;}
+.fNav{margin-bottom:20px;}
+.fNav li{float:left; margin-right:15px;}
+.fNav li:nth-child(2){font-weight:bold;}
+.fNav li a{display:block;}
+address{font-style:normal; font-size:11px; color:#767676;}
