@@ -27,17 +27,19 @@
 	margin-bottom: 0;
 }
 /*conOne*/
-.conOneWrap{width: 1200px; margin: auto; text-align:center; overflow:hidden; margin-bottom:210px;}
+.conOneWrap{width: 1200px; margin: auto; text-align:center; margin-bottom:210px;}
 .cTitle{font-size:2.8em; color:#232848; margin-bottom:50px;}
 .conOneWrap>h3{margin-bottom:145px;}
 .cOneBody{
 	width: 360px; height: 600px; float:left; margin-right:50px; position:relative;
+	box-shadow:10px 10px 10px #eae5fc, -10px -10px 10px #eae5fc, -10px 10px 10px #eae5fc, 10px -10px 10px #eae5fc;
 }
+.cOneBody a{display:block; height: 600px;}
 .cOneBody:last-child{margin-right:0;}
 .cOneLeft{background: url(../images/cOne01.jpg) no-repeat 50%;}
 .cOneCenter{background: url(../images/cOne02.jpg) no-repeat 50%;}
 .cOneRight{float:right; background: url(../images/cOne03.jpg) no-repeat 50%;}
-.cOneTxt{position:absolute; left:40px; bottom:100px; padding:20px; text-align:center;}
+.cOneTxt{position:absolute; left:40px; bottom:100px; padding: 0 20px; text-align:center;}
 .cOneTxt>h3{font-size:1.5em; margin-bottom:15px; color:#242946;}
 .cOneTxt>p{font-size:0.8em; color:#565372;}
 /*conTwo*/
@@ -78,7 +80,7 @@
 .cFoBody{
 	width: 550px; float:left; padding:50px 40px; 
 	margin:0 100px 50px 0; text-align:left;
-	border:2px solid #fafafa;
+	border:2px solid #b6b6b6; border-radius:30px;
 }
 .cFoBody:nth-child(3){margin-right:0;}
 .cFoBody:nth-child(4){margin-bottom:0;}
