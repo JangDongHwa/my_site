@@ -3,8 +3,9 @@
 #header{width: 1200px; height: 197px; margin: auto; overflow:hidden;}
 .logo{
 	width: 200px; height: 197px; float:left; 
-	background:url(../images/logo.png) no-repeat 50%; text-indent:-9999px; font-size:0;
+	background:url(../images/logo.png) no-repeat left; text-indent:-9999px; font-size:0;
 }
+.logo a{display:block; height: 197px;}
 .gnb{float:right; line-height:197px;}
 .gnb ul{overflow:hidden;}
 .gnb ul li{float:left; margin-left:80px;}
@@ -92,8 +93,9 @@
 .fWrap{width: 1200px; height: 195px; margin: auto; overflow:hidden;}
 .fLogo{
 	width: 200px; height: 195px; float:left;
-	background:url(../images/logo.png) no-repeat 50%; text-indent:-9999px; font-size:0;
+	background:url(../images/logo.png) no-repeat left; text-indent:-9999px; font-size:0;
 }
+.fLogo a{display:block; height: 195px;}
 .fSns{width: 370px; height: 195px; float:right;padding: 68px 0;}
 .fSns ul{overflow:hidden;}
 .fSns ul li{
