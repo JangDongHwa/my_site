@@ -10,7 +10,17 @@
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
-		
+		$(document).ready(function(){
+			var main_slider = $(".slider").bxSlider({
+				controls:false,auto:true,mode:"fade",pager:false
+			});
+			$(".next").click(function(){
+				main_slider.goToNextSlide();
+			});
+			$(".prev").click(function(){
+				main_slider.goToPrevSlide();
+			});
+		});
 	</script>
 </head>
 <body>
@@ -31,12 +41,45 @@
 			<div class="m_hd_top">
 				<h1><a href="#"><img src="images/logo.png" alt=""> </a></h1>
 				<div class="m_gnb">
-					<ul>
-						<li><a href="#">영화</a></li>
-						<li><a href="#">예매</a></li>
-						<li><a href="#">극장</a></li>
-						<li><a href="#">이벤트</a></li>
-						<li><a href="#">기프트샵</a></li>
+					<ul class="main_menu">
+						<li>
+							<a href="#">영화</a>
+							<ul class="sub_menu">
+								<li><a href="#">무비차트</a></li>
+								<li><a href="#">트레일러</a></li>
+								<li><a href="#">상영예정작</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">예매</a>
+							<ul class="sub_menu">
+								<li><a href="#">간편 예매</a></li>
+								<li><a href="#">상영시간표</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">극장</a>
+							<ul class="sub_menu">
+								<li><a href="#">CGV극장</a></li>
+								<li><a href="#">특별관</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">이벤트</a>
+							<ul class="sub_menu">
+								<li><a href="#">할인</a></li>
+								<li><a href="#">시사회</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">기프트샵</a>
+							<ul class="sub_menu">
+								<li><a href="#">새로나온 상품</a></li>
+								<li><a href="#">인기상품</a></li>
+								<li><a href="#">씨네샵</a></li>
+								<li><a href="#">관람권</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -44,13 +87,81 @@
 		<div class="slider_wrap">
 			<ul class="slider">
 				<li>
-					<img src="images/main_slider01.jpg" alt="movie poster">
+					<img src="images/main_slider01.jpg" alt="movie_poster">
+				</li>
+				<li>
+					<img src="images/main_slider02.jpg" alt="movie_poster">
+				</li>
+				<li>
+					<img src="images/main_slider03.jpg" alt="movie_poster">
+				</li>
+				<li>
+					<img src="images/main_slider04.jpg" alt="movie_poster">
 				</li>
 			</ul>
+			<div class="slider_btn next">
+				<img src="images/prev.png" alt="슬라이드변경버튼">
+			</div>
+			<div class="slider_btn prev">
+				<img src="images/next.png" alt="슬라이드변경버튼">
+			</div>
+			<div class="list_wrap">
+				<h3> 예매순위 </h3>
+				<div class="list">
+					<ul>
+						<li>
+							<img src="images/list01.jpg" alt="movie_poster">
+						</li>
+						<li>
+							<img src="images/list02.jpg" alt="movie_poster">
+						</li>
+						<li>
+							<img src="images/list03.jpg" alt="movie_poster">
+						</li>
+						<li>
+							<img src="images/list04.jpg" alt="movie_poster">
+						</li>
+						<li>
+							<img src="images/list05.jpg" alt="movie_poster">
+						</li>
+					</ul>
+					<div class="list_btn next">
+						<img src="images/sub_prev.png" alt="리스트변경버튼">
+					</div>
+					<div class="list_btn prev">
+						<img src="images/sub_next.png" alt="리스트변경버튼">
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div id="conetents"></div>
+	<div id="contents">
+		<div class="special_wrap">
+			<div class="special">
+				<div class="s_title">
+					<h3>특별관</h3>
+				</div>
+				<div class="s_body">
+					<ul>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div id="footer"></div>
 </div>
+<script>
+	
+</script>
 </body>
 </html>
