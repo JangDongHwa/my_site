@@ -20,6 +20,10 @@
 			$(".prev").click(function(){
 				main_slider.goToPrevSlide();
 			});
+			$(".main_menu>li").click(function(){
+				var li_num = $(this).index();
+				$(".sub_menu").hide().eq(li_num).show();
+			});
 		});
 	</script>
 </head>
@@ -44,42 +48,44 @@
 					<ul class="main_menu">
 						<li>
 							<a href="#">영화</a>
-							<ul class="sub_menu">
-								<li><a href="#">무비차트</a></li>
-								<li><a href="#">트레일러</a></li>
-								<li><a href="#">상영예정작</a></li>
-							</ul>
 						</li>
 						<li>
 							<a href="#">예매</a>
-							<ul class="sub_menu">
-								<li><a href="#">간편 예매</a></li>
-								<li><a href="#">상영시간표</a></li>
-							</ul>
 						</li>
 						<li>
 							<a href="#">극장</a>
-							<ul class="sub_menu">
-								<li><a href="#">CGV극장</a></li>
-								<li><a href="#">특별관</a></li>
-							</ul>
-						</li>
+						</li>							
 						<li>
 							<a href="#">이벤트</a>
-							<ul class="sub_menu">
-								<li><a href="#">할인</a></li>
-								<li><a href="#">시사회</a></li>
-							</ul>
 						</li>
 						<li>
 							<a href="#">기프트샵</a>
-							<ul class="sub_menu">
-								<li><a href="#">새로나온 상품</a></li>
-								<li><a href="#">인기상품</a></li>
-								<li><a href="#">씨네샵</a></li>
-								<li><a href="#">관람권</a></li>
-							</ul>
 						</li>
+					</ul>
+				</div>
+				<div class="sub_menu_wrap">
+					<ul class="sub_menu movie">
+							<li><a href="#">무비차트</a></li>
+							<li><a href="#">트레일러</a></li>
+							<li><a href="#">상영예정작</a></li>
+					</ul>
+					<ul class="sub_menu ticket">
+							<li><a href="#">간편예매</a></li>
+							<li><a href="#">상영시간표</a></li>
+					</ul>
+					<ul class="sub_menu cinema">
+							<li><a href="#">CGV극장</a></li>
+							<li><a href="#">특별관</a></li>
+					</ul>
+					<ul class="sub_menu event">
+							<li><a href="#">할인</a></li>
+							<li><a href="#">시사회</a></li>
+					</ul>
+					<ul class="sub_menu gift">
+							<li><a href="#">새로나온상품</a></li>
+							<li><a href="#">인기상품</a></li>
+							<li><a href="#">씨네샵</a></li>
+							<li><a href="#">관람권</a></li>
 					</ul>
 				</div>
 			</div>
@@ -136,6 +142,7 @@
 		</div>
 	</div>
 	<div id="contents">
+		<!-- content special -->
 		<div class="special_wrap">
 			<div class="special">
 				<div class="s_title">
@@ -157,6 +164,25 @@
 				</div>
 			</div>
 		</div>
+		<!-- content special -->
+		<!-- content event -->
+		<div class="events_wrap">
+			<div class="events">
+				<div class="e_title">
+					<h3>이벤트</h3>
+				</div>
+				<div class="e_body">
+					<ul>
+						<li><a href="#"></a></li>
+						<li><a href="#"><img src="images/event02.jpg" alt="이벤트"></a></li>
+						<li><a href="#"><img src="images/event03.jpg" alt="이벤트"></a></li>
+						<li><a href="#"><img src="images/event05.jpg" alt="이벤트"></a></li>
+						<li><a href="#"><img src="images/event04.jpg" alt="이벤트"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- content event -->
 	</div>
 	<div id="footer"></div>
 </div>

@@ -11,12 +11,15 @@
 .m_hd_top h1{float:left; line-height:116px;}
 .m_gnb{float:left;}
 .m_gnb ul.main_menu{overflow:hidden;}
-.m_gnb ul.main_menu>li{float:left; line-height:116px;width: 220px;text-align:center;}
+.m_gnb ul.main_menu>li{float:left;line-height:116px;width: 220px;text-align:center;}
 .m_gnb ul.main_menu>li:hover a{color:red;}
 .m_gnb ul.main_menu>li>a{display:block;font-size:18px; font-weight:bold; color: white; text-shadow:0 0 10px #111;}
-ul.sub_menu{width: 100%;height: 20px;}
-ul.sub_menu li{float:left;}
-ul.sub_menu li a{display:block; font-size:13px; color:white;}
+.sub_menu_wrap{position:absolute; top:116px;left:50%; transform:translate(-50%);}
+.movie,.ticket,.cinema,.event,.gift{display:none;}
+ul.sub_menu{overflow:hidden;}
+ul.sub_menu>li{float:left; line-height:20px;margin-right:10px;}
+ul.sub_menu>li:hover a{color:red;}
+ul.sub_menu>li>a{display:block; font-size:13px; color:white; text-align:center; text-shadow:0 0 10px #111;}
 
 /*slider*/
 .bx-wrapper {
@@ -24,20 +27,46 @@ ul.sub_menu li a{display:block; font-size:13px; color:white;}
     -webkit-box-shadow: none;
     box-shadow: none;
     border: 0 none;
+    margin-bottom:0;
 }
 .slider_btn{position:absolute; top:300px; cursor:pointer;}
 .slider_btn.prev{right: 10px;}
 .slider_btn.next{left: 10px;}
-.list_wrap{width: 1260px; height: 320px; position:absolute; left:50%; transform:translate(-50%);background:#edab73; top:700px;}
+.list_wrap{width: 1260px; height: 320px;margin:0 auto;background:#edab73; margin-bottom:50px; position:relative;}
 .list_wrap h3{text-align:center; color:#fff;line-height:65px;}
 .list{padding:0 35px;}
 .list ul{overflow:hidden;}
 .list ul li{width: calc(20% - 35px); height:255px; float:left; margin-right:35px;}
 .list ul li img{width: 100%; height: 100%;}
-.list_btn{position:absolute; top:50%;transform:translate(-50%);}
+.list_btn{position:absolute; top:50%;transform:translate(-50%); cursor:pointer;}
 .list_btn.prev{right:0;}
 .list_btn.next{left:10px;}
-#contents{height: 500px; padding-top:242px;}
-.special_wrap{background: #dbdad1;}
+/*content*/
+#contents{}
+/*special*/
+.special_wrap{background: #dbdad1; margin-bottom:50px;}
 .special{width: 1260px; margin:0 auto;}
 .s_title h3{color:#fe3635; padding-bottom:50px;}
+.s_body ul{overflow:hidden; border:1px solid #fdfcf0; box-sizing:border-box;}
+.s_body ul li{float:left;width:10%;height: 60px; background:url(../images/cinema_sprite.png) no-repeat 50%;}
+.s_body ul li:nth-child(1){background-position:0 -15px;}
+.s_body ul li:nth-child(2){background-position: -126px -15px;}
+.s_body ul li:nth-child(3){background-position: -252px -15px;}
+.s_body ul li:nth-child(4){background-position: -378px -15px;}
+.s_body ul li:nth-child(5){background-position: -504px -15px;}
+.s_body ul li:nth-child(6){background-position: -630px -15px;}
+.s_body ul li:nth-child(7){background-position: -756px -15px;}
+.s_body ul li:nth-child(8){background-position: -882px -15px;}
+.s_body ul li:nth-child(9){background-position: 0 -110px;}
+.s_body ul li:nth-child(10){background-position: -126px -110px;}
+.s_body ul li a{display:block;height: 60px;}
+/*events*/
+.events_wrap{margin-bottom:50px;}
+.events{width: 1260px; margin:0 auto;}
+.events h3{color:#fe3635; padding-bottom:50px;}
+.e_body ul{overflow:hidden;}
+.e_body ul li{float:left;width: 25%;height: 200px;}
+.e_body ul li:nth-child(1){width: 25%;height: 400px; background:#292c35 url(../images/event01.jpg) no-repeat 50%;}
+.e_body ul li:nth-child(2){width: 50%;}
+.e_body ul li:last-child{width: 50%;}
+.e_body ul li a{display:block;}
