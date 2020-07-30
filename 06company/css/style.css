@@ -32,8 +32,8 @@ ul.sub_menu>li>a{display:block; font-size:13px; color:white; text-align:center; 
 .slider_btn{position:absolute; top:300px; cursor:pointer;}
 .slider_btn.prev{right: 10px;}
 .slider_btn.next{left: 10px;}
-.list_wrap{width: 1260px; height: 320px;margin:0 auto;background:#edab73; margin-bottom:50px; position:relative;}
-.list_wrap h3{text-align:center; color:#fff;line-height:65px;}
+.list_wrap{width: 1260px; height: 360px;margin:0 auto;background:rgba(237,171,115,0.5); border-radius:3px;margin-bottom:50px; position:relative;}
+.li_title h3{text-align:center; color:#fff;line-height:65px;}
 .list{padding:0 35px;}
 .list ul{overflow:hidden;}
 .list ul li{width: calc(20% - 35px); height:255px; float:left; margin-right:35px;}
@@ -47,8 +47,8 @@ ul.sub_menu>li>a{display:block; font-size:13px; color:white; text-align:center; 
 .special_wrap{background: #dbdad1; margin-bottom:50px;}
 .special{width: 1260px; margin:0 auto;}
 .s_title h3{color:#fe3635; padding-bottom:50px;}
-.s_body ul{overflow:hidden; border:1px solid #fdfcf0; box-sizing:border-box;}
-.s_body ul li{float:left;width:10%;height: 60px; background:url(../images/cinema_sprite.png) no-repeat 50%;}
+.s_body ul{overflow:hidden; padding-bottom:50px;box-sizing:border-box;}
+.s_body ul li{float:left;width:10%;height: 60px; border:1px solid #fdfcf0; background:url(../images/cinema_sprite.png) no-repeat 50%;}
 .s_body ul li:nth-child(1){background-position:0 -15px;}
 .s_body ul li:nth-child(2){background-position: -126px -15px;}
 .s_body ul li:nth-child(3){background-position: -252px -15px;}
@@ -66,7 +66,18 @@ ul.sub_menu>li>a{display:block; font-size:13px; color:white; text-align:center; 
 .events h3{color:#fe3635; padding-bottom:50px;}
 .e_body ul{overflow:hidden;}
 .e_body ul li{float:left;width: 25%;height: 200px;}
-.e_body ul li:nth-child(1){width: 25%;height: 400px; background:#292c35 url(../images/event01.jpg) no-repeat 50%;}
+.e_body ul li:nth-child(1){width: 25%;height: 400px;}
 .e_body ul li:nth-child(2){width: 50%;}
 .e_body ul li:last-child{width: 50%;}
 .e_body ul li a{display:block;}
+.e_body img{width: 100%;}
+/*gift*/
+.gift_wrap{background:#dbdad1;margin-bottom:50px;}
+.gifts{width: 1260px; margin:0 auto; padding:50px 0;}
+.g_title h3{color:#fe3635; padding-bottom:50px;}
+.g_body{}
+.g_body .sb_title ul{overflow:hidden;}
+.g_body .sb_title ul li{float:left; padding:0 20px;border-right:1px solid #fff;}
+.g_body .sb_title ul li:hover a{color:#fe3635;}
+.g_body .sb_title ul li a{color:#fff;}
+.goods>li{float:left;}
