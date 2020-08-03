@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>오뚜기</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".main_menu>ul>li").mouseenter(function(){
+				var sub_menu = $(this).index();
+				$(".sub_menu").eq(sub_menu).stop().slideDown();
+			});
+			$(".main_menu>ul>li").mouseleave(function(){
+				var sub_menu = $(this).index();
+				$(".sub_menu").hide();
+			});
+			$(".slider").bxSlider({
+				auto:true,controls:false
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div class="hd_top_wrap">
+				<div class="hd_top">
+					<div class="logo">
+						<a href="#"><h1>logo</h1></a>
+					</div>
+					<div class="main_menu">
+						<ul>
+							<li>
+								<a href="#">회사소개
+								<ul class="sub_menu">
+									<li>(주)오뚜기</li>
+									<li>지속 가능 경영</li>
+									<li>인재 채용</li>
+									<li>사업장 소개</li>
+									<li>찾아오시는 길</li>
+								</ul>
+								</a>
+							</li>
+							<li>
+								<a href="#">제품정보
+								<ul class="sub_menu">
+									<li>신제품 소개</li>
+									<li>제품 소개</li>
+								</ul>
+								</a>
+							</li>
+							<li>
+								<a href="#">쿠킹&스토리
+								<ul class="sub_menu">
+									<li>쿠킹&스토리</li>
+									<li>전체 레시피</li>
+								</ul>
+								</a>
+							</li>
+							<li>
+								<a href="#">홍보센터
+								<ul class="sub_menu">
+									<li>오뚜기 뉴스</li>
+									<li>오뚜기 광고</li>
+									<li>투자 정보</li>
+									<li>오뚜기 창립 50주년</li>
+								</ul>
+								</a>
+							</li>
+							<li>
+								<a href="#">고객서비스
+								<ul class="sub_menu">
+									<li>고객 한마디</li>
+									<li>공장 견학</li>
+								</ul>
+								</a>
+							</li>
+							<li>
+								<a href="#">오뚜기몰</a>
+							</li>
+						</ul>
+						<div class="toggle_menu">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="visual_wrap">
+				<div class="visual">
+					<ul class="slider">
+						<li><a href="#"><img src="images/slider01.jpg" alt="slider_img"></a></li>
+						<li><a href="#"><img src="images/slider02.jpg" alt="slider_img"></a></li>
+						<li><a href="#"><img src="images/slider03.jpg" alt="slider_img"></a></li>
+						<li><a href="#"><img src="images/slider04.jpg" alt="slider_img"></a></li>
+						<li><a href="#"><img src="images/slider05.jpg" alt="slider_img"></a></li>
+						<li><a href="#"><img src="images/slider06.jpg" alt="slider_img"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="container">
+			<div class="content_wrap">
+				<div class="con_plat">
+					<ul>
+						<li>
+							<a href="#"></a>
+						</li>
+						<li>
+							<a href="#"></a>
+						</li>
+						<li>
+							<a href="#"></a>
+						</li>
+						<li>
+							<a href="#"></a>
+						</li>
+						<li>
+							<a href="#"></a>
+						</li>
+						<li>
+							<a href="#"></a>
+						</li>
+						<li>
+							<a href="#"></a>
+						</li>
+						<li>
+							<a href="#"></a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		<div id="footer"></div>
+	</div>
+</body>
+</html>

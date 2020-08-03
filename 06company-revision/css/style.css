@@ -1,0 +1,36 @@
+@charset "utf-8";
+/*header*/
+/*headertop*/
+.hd_top_wrap{position:fixed; left:50%; transform:translateX(-50%); z-index:1;}
+.hd_top{width: 1260px; height: 100px;padding:30px 0; background:rgba(0,0,0,0.1); border-radius:5px;}
+.logo{float:left; width: 100px; height: 100px;padding-left:10px; margin-right:100px;}
+.logo a{display:block; line-height:100px;background:url(../images/logo.png) no-repeat 50%; text-indent:-9999px;}
+.main_menu{float:left; width:1000px; position:relative;}
+.main_menu>ul{overflow:hidden;width:calc(100% - 50px);}
+.main_menu>ul>li{width: 16.66%;float:left;line-height:100px;}
+.main_menu>ul>li>a{display:block;font-size:18px; font-weight:bold; text-align:center; color:#fff; text-shadow:0 0 10px #eee;}
+.main_menu>ul>li:hover a{color:#fef100; text-shadow:0 0 10px #fff31d;}
+.sub_menu{display:none;}
+.sub_menu>li{font-size:12px;}
+.main_menu .toggle_menu{width: 50px; height: 50px; position:absolute; right:0; top:25px; cursor:pointer;}
+.toggle_menu div{width: 30px; height: 5px; background:#dc2c34; border-radius:5px;position:absolute; left:50%; transform:translateX(-50%); display:none;}
+.toggle_menu .bar1{top:18px;}
+.toggle_menu .bar2{top:26px;}
+.toggle_menu .bar3{top:34px;}
+
+/*visual*/
+.visual_wrap{height:700px;}
+.visual .slider li{width: 100%;}
+.visual .slider li img{height: 700px;}
+.bx-wrapper {-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; border: 0 none; margin-bottom:0;}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {background: #f00;}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {bottom: 250px;}
+
+/*content*/
+.con_plat{width: 1260px; height: 950px; position:absolute; top: 685px; left:50%; transform:translateX(-50%); border-radius:15px; background:blue;}
+.con_plat ul{overflow:hidden; height: 950px;}
+.con_plat ul li{float:left;display:inline-block; width: 25%; height: 33.333%;}
+.con_plat ul li:nth-child(3){width:50%;}
+.con_plat ul li:nth-child(4){height:66.666%;}
+.con_plat ul li:nth-child(6){width:50%;}
+.con_plat ul li:nth-child(7){width:50%;}
