@@ -24,6 +24,14 @@
 				var li_num = $(this).index();
 				$(".sub_menu").hide().eq(li_num).show();
 			});
+			$(".sb_title>ul>li").click(function(){
+				var gift = $(this).index();
+				$(".goods").hide().eq(gift).show();
+				return false;
+			});
+			$(".not_slider").bxSlider({
+				auto:true,mode:"vertical",controls:false,pager:false
+			});
 		});
 	</script>
 </head>
@@ -111,40 +119,40 @@
 			<div class="slider_btn prev">
 				<img src="images/next.png" alt="슬라이드변경버튼">
 			</div>
-			<div class="list_wrap">
-				<div class="li_title">
-					<h3> 예매순위 </h3>
-				</div>
-				<div class="list">
-					<ul>
-						<li>
-							<img src="images/list01.jpg" alt="movie_poster">
-						</li>
-						<li>
-							<img src="images/list02.jpg" alt="movie_poster">
-						</li>
-						<li>
-							<img src="images/list03.jpg" alt="movie_poster">
-						</li>
-						<li>
-							<img src="images/list04.jpg" alt="movie_poster">
-						</li>
-						<li>
-							<img src="images/list05.jpg" alt="movie_poster">
-						</li>
-					</ul>
-					<div class="list_btn next">
-						<img src="images/sub_prev.png" alt="리스트변경버튼">
-					</div>
-					<div class="list_btn prev">
-						<img src="images/sub_next.png" alt="리스트변경버튼">
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
 	<div id="contents">
 		<!-- content special -->
+		<div class="list_wrap">
+			<div class="li_title">
+				<h3> 예매순위 </h3>
+			</div>
+			<div class="list">
+				<ul>
+					<li>
+						<img src="images/list01.jpg" alt="movie_poster">
+					</li>
+					<li>
+						<img src="images/list02.jpg" alt="movie_poster">
+					</li>
+					<li>
+						<img src="images/list03.jpg" alt="movie_poster">
+					</li>
+					<li>
+						<img src="images/list04.jpg" alt="movie_poster">
+					</li>
+					<li>
+						<img src="images/list05.jpg" alt="movie_poster">
+					</li>
+				</ul>
+				<div class="list_btn next">
+					<img src="images/sub_prev.png" alt="리스트변경버튼">
+				</div>
+				<div class="list_btn prev">
+					<img src="images/sub_next.png" alt="리스트변경버튼">
+				</div>
+				</div>	
+		</div>
 		<div class="special_wrap">
 			<div class="special">
 				<div class="s_title">
@@ -196,39 +204,114 @@
 						<ul>
 							<li>
 								<a href="#">인기상품</a>
-								<ul class="goods">
-									<li><a href="#"><img src="" alt=""> </a></li>
-									<li><a href="#"><img src="" alt=""> </a></li>
-									<li><a href="#"><img src="" alt=""> </a></li>
-									<li><a href="#"><img src="" alt=""> </a></li>
-								</ul>
 							</li>
 							<li>
 								<a href="#">관람권</a>
-								<ul class="goods">
-									<li><a href="#"><img src="" alt=""> </a></li>
-									<li><a href="#"><img src="" alt=""> </a></li>
-									<li><a href="#"><img src="" alt=""> </a></li>
-									<li><a href="#"><img src="" alt=""> </a></li>
-								</ul>
 							</li>
 							<li>
 								<a href="#">영화관련굿즈</a>
-								<ul class="goods">
-									<li><a href="#"><img src="" alt=""> </a></li>
-									<li><a href="#"><img src="" alt=""> </a></li>
-									<li><a href="#"><img src="" alt=""> </a></li>
-									<li><a href="#"><img src="" alt=""> </a></li>
-								</ul>
 							</li>
+						</ul>
+					</div>
+					<div class="goods_wrap">
+						<ul class="goods open">
+							<li><a href="#"><img src="images/gift_01.jpg" alt=""> </a></li>
+							<li><a href="#"><img src="images/gift_02.jpg" alt=""> </a></li>
+							<li><a href="#"><img src="images/gift_03.jpg" alt=""> </a></li>
+							<li><a href="#"><img src="images/gift_04.jpg" alt=""> </a></li>
+						</ul>
+						<ul class="goods">
+							<li><a href="#"><img src="images/gift_05.jpg" alt=""> </a></li>
+							<li><a href="#"><img src="images/gift_06.jpg" alt=""> </a></li>
+							<li><a href="#"><img src="images/gift_07.jpg" alt=""> </a></li>
+							<li><a href="#"><img src="images/gift_012.jpg" alt=""> </a></li>
+						</ul>
+						<ul class="goods">
+							<li><a href="#"><img src="images/gift_08.jpg" alt=""> </a></li>
+							<li><a href="#"><img src="images/gift_09.jpg" alt=""> </a></li>
+							<li><a href="#"><img src="images/gift_010.jpg" alt=""> </a></li>
+							<li><a href="#"><img src="images/gift_011.jpg" alt=""> </a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- content gift -->
+		<!-- notice -->
+		<div class="notice">
+			<div class="notice_title">
+				공지사항
+			</div>
+			<div class="notice_body">
+				<ul class="not_slider">
+					<li><a href="#">[기타] 포토티켓 리뉴얼 안내</a></li>
+					<li><a href="#">[시스템점검]	2020년 4월 시스템 점검 안내</a></li>
+					<li><a href="#">[극장] 정부 재난지원금 사용 안내</a></li>
+					<li><a href="#">[기타] IMAX 포스터 컬렉션북 7월 배송 안내</a></li>
+					<li><a href="#">[극장] CGV원주 2012.9.6 OPEN</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- notice -->
+		<!-- ad -->
+		<div class="ad">
+			<img src="images/con_ad.png" alt="">
+		</div>
+		<!-- ad -->
 	</div>
-	<div id="footer"></div>
+	<div id="footer">
+		<div class="f_wrap">
+			<!-- footermenu -->
+			<div class="f_menu">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">IR</a></li>
+					<li><a href="#">채용정보</a></li>
+					<li><a href="#">광고/프로모션문의</a></li>
+					<li><a href="#">제휴문의</a></li>
+					<li><a href="#">출점문의</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">편성기준</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">법적고지</a></li>
+					<li><a href="#">이메일주소무단수집거부</a></li>
+					<li><a href="#">상생경영</a></li>
+					<li><a href="#">사이트맵	</a></li>
+				</ul>
+			</div>
+			<!-- footermenu -->
+			<div class="f_body">
+				<div class="f_logo">
+					<img src="images/f_logo.png" alt="f_logo">
+				</div>
+				<div class="f_right">
+					<p>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)<br>
+					대표이사 : 최병환사업자등록번호 : 104-81-45690통신판매업신고번호 : 2017-서울용산-0662 <button>사업자정보확인</button><br>
+					호스팅사업자 : CJ올리브네트웍스개인정보보호 책임자 : 이동현대표이메일 : cjcgvmaster@cj.netCGV고객센터 : 1544-1122</p>
+					<p class="copyright">© CJ CGV. All Rights Reserved</p>
+					<div class="sns">
+						<ul>
+							<li><a href="#"><img src="images/sns_icon01.png" alt="sns"></a></li>
+							<li><a href="#"><img src="images/sns_icon02.png" alt="sns"></a></li>
+							<li><a href="#"><img src="images/sns_icon03.png" alt="sns"></a></li>
+						</ul>
+					</div>
+					<div class="family_site_wrap">
+						<select name="family_site" id="">
+							<option value="#">CJ주식회사</option>
+							<option value="#">CJ ENM(E&M)</option>
+							<option value="#">CJ CGV</option>
+							<option value="#">CJ 파워캐스트</option>
+							<option value="#">CJ 제일제당</option>
+							<option value="#">CJ 푸드빌</option>
+							<option value="#">CJ 대한통운</option>
+						</select>
+						<button type="button"> GO</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 <script>
 	

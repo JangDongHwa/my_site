@@ -29,8 +29,9 @@
 /*content*/
 .con_plat{width: 1260px; height: 950px; position:absolute; top: 685px; left:50%; transform:translateX(-50%); border-radius:15px; background:blue;}
 .con_plat ul{overflow:hidden; height: 950px;}
-.con_plat ul li{float:left;display:inline-block; width: 25%; height: 33.333%;}
+.con_plat ul li{float:left;width: 25%; height: 33.333%;}
 .con_plat ul li:nth-child(3){width:50%;}
 .con_plat ul li:nth-child(4){height:66.666%;}
 .con_plat ul li:nth-child(6){width:50%;}
 .con_plat ul li:nth-child(7){width:50%;}
+.con_plat ul li a{display:block;}

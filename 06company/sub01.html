@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title> CGV 영화</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/sub01.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".main_menu>li").click(function(){
+				var li_num = $(this).index();
+				$(".sub_menu").hide().eq(li_num).show();
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<div id="header_wrap">
+			<div id="header">
+				<div class="m_util">
+					<ul>
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">회원가입</a></li>
+						<li><a href="#">MY CGV</a></li>
+						<li><a href="#">CLUB 서비스</a></li>
+						<li><a href="#">VIP LOUNGE</a></li>
+						<li><a href="#">고객센터</a></li>
+						<li><a href="#">ENGLISH</a></li>
+					</ul>
+				</div>
+				<div class="m_hd_top">
+					<h1><a href="#"><img src="images/logo.png" alt=""> </a></h1>
+					<div class="m_gnb">
+						<ul class="main_menu">
+							<li>
+								<a href="#">영화</a>
+							</li>
+							<li>
+								<a href="#">예매</a>
+							</li>
+							<li>
+								<a href="#">극장</a>
+							</li>							
+							<li>
+								<a href="#">이벤트</a>
+							</li>
+							<li>
+								<a href="#">기프트샵</a>
+							</li>
+						</ul>
+					</div>
+					<div class="sub_menu_wrap">
+						<ul class="sub_menu movie">
+								<li><a href="#">무비차트</a></li>
+								<li><a href="#">트레일러</a></li>
+								<li><a href="#">상영예정작</a></li>
+						</ul>
+						<ul class="sub_menu ticket">
+								<li><a href="#">간편예매</a></li>
+								<li><a href="#">상영시간표</a></li>
+						</ul>
+						<ul class="sub_menu cinema">
+								<li><a href="#">CGV극장</a></li>
+								<li><a href="#">특별관</a></li>
+						</ul>
+						<ul class="sub_menu event">
+								<li><a href="#">할인</a></li>
+								<li><a href="#">시사회</a></li>
+						</ul>
+						<ul class="sub_menu gift">
+								<li><a href="#">새로나온상품</a></li>
+								<li><a href="#">인기상품</a></li>
+								<li><a href="#">씨네샵</a></li>
+								<li><a href="#">관람권</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="hd_bg_img_wrap">
+				<img src="images/sub_cinema01.jpg" alt="">
+				<div class="title">
+					<h3>영화</h3>
+				</div>
+			</div>
+		</div>
+		<div id="nav">
+			<div class="n_wrap">
+				<ul>
+					<li><img src="images/nav_icon.png" alt="icon"></li>
+					<li><img src="images/nav_icon01.png" alt=""><a href="#">영화</a></li>
+					<li><img src="images/nav_icon01.png" alt=""><a href="#">무비차트</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="container">
+			
+			<div class="ad">
+				<img src="images/con_ad.png" alt="">
+			</div>
+		</div>
+		<div id="footer">
+			<div class="f_wrap">
+			<!-- footermenu -->
+				<div class="f_menu">
+					<ul>
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">IR</a></li>
+						<li><a href="#">채용정보</a></li>
+						<li><a href="#">광고/프로모션문의</a></li>
+						<li><a href="#">제휴문의</a></li>
+						<li><a href="#">출점문의</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">편성기준</a></li>
+						<li><a href="#">개인정보처리방침</a></li>
+						<li><a href="#">법적고지</a></li>
+						<li><a href="#">이메일주소무단수집거부</a></li>
+						<li><a href="#">상생경영</a></li>
+						<li><a href="#">사이트맵	</a></li>
+					</ul>
+				</div>
+			<!-- footermenu -->
+				<div class="f_body">
+					<div class="f_logo">
+						<img src="images/f_logo.png" alt="f_logo">
+					</div>
+					<div class="f_right">
+						<p>(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동)<br>
+						대표이사 : 최병환사업자등록번호 : 104-81-45690통신판매업신고번호 : 2017-서울용산-0662 <button>사업자정보확인</button><br>
+						호스팅사업자 : CJ올리브네트웍스개인정보보호 책임자 : 이동현대표이메일 : cjcgvmaster@cj.netCGV고객센터 : 1544-1122</p>
+						<p class="copyright">© CJ CGV. All Rights Reserved</p>
+						<div class="sns">
+							<ul>
+								<li><a href="#"><img src="images/sns_icon01.png" alt="sns"></a></li>
+								<li><a href="#"><img src="images/sns_icon02.png" alt="sns"></a></li>
+								<li><a href="#"><img src="images/sns_icon03.png" alt="sns"></a></li>
+							</ul>
+						</div>
+						<div class="family_site_wrap">
+							<select name="family_site" id="">
+								<option value="#">CJ주식회사</option>
+								<option value="#">CJ ENM(E&M)</option>
+								<option value="#">CJ CGV</option>
+								<option value="#">CJ 파워캐스트</option>
+								<option value="#">CJ 제일제당</option>
+								<option value="#">CJ 푸드빌</option>
+								<option value="#">CJ 대한통운</option>
+							</select>
+							<button type="button">GO</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
