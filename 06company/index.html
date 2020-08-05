@@ -20,11 +20,11 @@
 			$(".prev").click(function(){
 				main_slider.goToPrevSlide();
 			});
-			$(".main_menu>li").click(function(){
+			$(".main_menu>li").mouseenter(function(){
 				var li_num = $(this).index();
 				$(".sub_menu").hide().eq(li_num).show();
 			});
-			$(".sb_title>ul>li").click(function(){
+			$(".sb_title>ul>li").mouseenter(function(){
 				var gift = $(this).index();
 				$(".goods").hide().eq(gift).show();
 				return false;
@@ -51,49 +51,49 @@
 				</ul>
 			</div>
 			<div class="m_hd_top">
-				<h1><a href="#"><img src="images/logo.png" alt=""> </a></h1>
+				<h1><a href="index.html"><img src="images/logo.png" alt=""> </a></h1>
 				<div class="m_gnb">
 					<ul class="main_menu">
 						<li>
-							<a href="#">영화</a>
+							<a href="sub01.html">영화</a>
 						</li>
 						<li>
-							<a href="#">예매</a>
+							<a href="sub02.html">예매</a>
 						</li>
 						<li>
-							<a href="#">극장</a>
+							<a href="sub03.html">극장</a>
 						</li>							
 						<li>
-							<a href="#">이벤트</a>
+							<a href="sub04.html">이벤트</a>
 						</li>
 						<li>
-							<a href="#">기프트샵</a>
+							<a href="sub05.html">기프트샵</a>
 						</li>
 					</ul>
 				</div>
 				<div class="sub_menu_wrap">
 					<ul class="sub_menu movie">
-							<li><a href="#">무비차트</a></li>
-							<li><a href="#">트레일러</a></li>
-							<li><a href="#">상영예정작</a></li>
+							<li><a href="sub01.html">무비차트</a></li>
+							<li><a href="sub01.html">트레일러</a></li>
+							<li><a href="sub01.html">상영예정작</a></li>
 					</ul>
 					<ul class="sub_menu ticket">
-							<li><a href="#">간편예매</a></li>
-							<li><a href="#">상영시간표</a></li>
+							<li><a href="sub02.html">간편예매</a></li>
+							<li><a href="sub02.html">상영시간표</a></li>
 					</ul>
 					<ul class="sub_menu cinema">
-							<li><a href="#">CGV극장</a></li>
-							<li><a href="#">특별관</a></li>
+							<li><a href="sub03.html">CGV극장</a></li>
+							<li><a href="sub03.html">특별관</a></li>
 					</ul>
 					<ul class="sub_menu event">
-							<li><a href="#">할인</a></li>
-							<li><a href="#">시사회</a></li>
+							<li><a href="sub04.html">할인</a></li>
+							<li><a href="sub04.html">시사회</a></li>
 					</ul>
 					<ul class="sub_menu gift">
-							<li><a href="#">새로나온상품</a></li>
-							<li><a href="#">인기상품</a></li>
-							<li><a href="#">씨네샵</a></li>
-							<li><a href="#">관람권</a></li>
+							<li><a href="sub05.html">새로나온상품</a></li>
+							<li><a href="sub05.html">인기상품</a></li>
+							<li><a href="sub05.html">씨네샵</a></li>
+							<li><a href="sub05.html">관람권</a></li>
 					</ul>
 				</div>
 			</div>
@@ -156,7 +156,7 @@
 		<div class="special_wrap">
 			<div class="special">
 				<div class="s_title">
-					<h3>특별관</h3>
+					<h3><a href="sub03.html">특별관</a></h3>
 				</div>
 				<div class="s_body">
 					<ul>
@@ -179,7 +179,7 @@
 		<div class="events_wrap">
 			<div class="events">
 				<div class="e_title">
-					<h3>이벤트</h3>
+					<h3><a href="sub04.html">이벤트</a></h3>
 				</div>
 				<div class="e_body">
 					<ul>
@@ -197,7 +197,7 @@
 		<div class="gift_wrap">
 			<div class="gifts">
 				<div class="g_title">
-					<h3>기프트샵</h3>
+					<h3><a href="sub05.html">기프트샵</a></h3>
 				</div>
 				<div class="g_body">
 					<div class="sb_title">
@@ -240,7 +240,7 @@
 		<!-- notice -->
 		<div class="notice">
 			<div class="notice_title">
-				공지사항
+				<a href="#">공지사항</a>
 			</div>
 			<div class="notice_body">
 				<ul class="not_slider">
@@ -255,7 +255,7 @@
 		<!-- notice -->
 		<!-- ad -->
 		<div class="ad">
-			<img src="images/con_ad.png" alt="">
+			<a href="#"><img src="images/con_ad.png" alt=""></a>
 		</div>
 		<!-- ad -->
 	</div>

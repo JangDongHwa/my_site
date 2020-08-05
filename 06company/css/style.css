@@ -50,7 +50,8 @@ ul.sub_menu>li>a{display:block; font-size:13px; color:white; text-align:center; 
 /*special*/
 .special_wrap{background: #dbdad1; margin-bottom:50px;}
 .special{width: 1260px; margin:0 auto;}
-.s_title h3{color:#fe3635; padding-bottom:50px;}
+.s_title h3{padding-bottom:50px;}
+.s_title h3 a{color:#fe3635;}
 .s_body ul{overflow:hidden; padding-bottom:50px;box-sizing:border-box;}
 .s_body ul li{float:left;width:10%;height: 60px; border:1px solid #fdfcf0; background:url(../images/cinema_sprite.png) no-repeat 50%;}
 .s_body ul li:nth-child(1){background-position:0 -15px;}
@@ -67,7 +68,8 @@ ul.sub_menu>li>a{display:block; font-size:13px; color:white; text-align:center; 
 /*events*/
 .events_wrap{margin-bottom:50px;}
 .events{width: 1260px; margin:0 auto;}
-.events h3{color:#fe3635; padding-bottom:50px;}
+.events h3{padding-bottom:50px;}
+.events h3 a{color:#fe3635;}
 .e_body ul{overflow:hidden;}
 .e_body ul li{float:left;width: 25%;height: 200px;}
 .e_body ul li:nth-child(1){width: 25%;height: 400px;}
@@ -78,7 +80,8 @@ ul.sub_menu>li>a{display:block; font-size:13px; color:white; text-align:center; 
 /*gift*/
 .gift_wrap{background:#dbdad1;margin-bottom:50px;}
 .gifts{width: 1260px; margin:0 auto; padding:50px 0;}
-.g_title h3{color:#fe3635; padding-bottom:50px;}
+.g_title h3{padding-bottom:50px;}
+.g_title h3 a{color:#fe3635;}
 .g_body{}
 .g_body .sb_title>ul{overflow:hidden;}
 .g_body .sb_title>ul>li{float:left; padding:0 20px;border-right:1px solid #fff; margin-bottom:55px;}
@@ -101,14 +104,15 @@ ul.sub_menu>li>a{display:block; font-size:13px; color:white; text-align:center; 
 .ad img{width: 100%;}
 
 /*footer*/
+#footer{background:#979482;}
 .f_wrap{width: 1260px; margin:0 auto;}
 /*footermenu*/
 .f_menu ul{overflow:hidden;padding:0 65px;}
-.f_menu ul li{float:left; border-right: 1.5px solid #95948f;margin-right:5px; padding:0 10px;}
+.f_menu ul li{float:left; border-right: 1.5px solid #fff;margin-right:5px; padding:0 10px;}
 .f_menu ul li:last-child{border-right: 0 none;}
 .f_menu ul li a{display:block; font-size:12px; text-align:center; color:#414141;}
 /*footerbody*/
-.f_body{}
+.f_body{overflow:hidden;}
 .f_logo{float:left;}
 .f_right{float:left; width:calc(100% - 143px); padding: 20px 10px; position:relative;}
 .f_right p{font-size:11px;}
