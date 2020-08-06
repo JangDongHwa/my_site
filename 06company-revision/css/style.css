@@ -31,6 +31,7 @@
 /*content*/
 #container{position:absolute; top: 685px; left:50%; transform:translateX(-50%); }
 /*plat*/
+.con_plat_wrap{width: 1260px; margin:0 auto;}
 .con_plat{width: 1260px; height: 950px; border-radius:15px; background:blue; overflow:hidden; margin-bottom:80px;}
 .con_plat ul{overflow:hidden; height: 950px;}
 .con_plat ul li{float:left;width: 25%; height: 33.333%;}
@@ -59,4 +60,26 @@ i{font-size:7em; color:#fff; vertical-align:middle; margin-bottom:30px;}
 .plat_recipe{background:#d167a2; text-align:center;padding:75px 0; box-sizing:border-box;}
 .plat_recipe h3{font-weight:bold;}
 /*favor*/
-.con_favorite_wrap{background:url(../images/favor_bg.jpg) no-repeat 50%;}
+.con_favorite_wrap{width: 1920px; background:url(../images/favor_bg.jpg) no-repeat 50%;}
+.con_favorite{ margin:0 auto;}
+.favor_title{text-align:center;margin-bottom:40px;}
+.favor_title h3{color:#fff; font-size:36px; padding-top:55px; margin-bottom:40px; position:relative;}
+.favor_title h3:after{content:""; display:block; width:40px; height: 2px; background:#fff; position:absolute; left:50%; transform:translateX(-50%);bottom:-18px;}
+.favor_title p{color:#fff;}
+.favor_body{width: 1260px; height: 320px;padding:0 30px;margin:0 auto; overflow:hidden; box-sizing:border-box; position:relative;}
+.favor_body div{float:left;}
+.pro_list{}
+.pro_list ul{overflow:hidden; width: 3790px; height: 320px;margin:0 40px;}
+.pro_list ul li{float:left;width: 220px; height: 320px; margin-right:24px;}
+.pro_list ul li:hover .overlay{top:0; transition:0.3s;}
+.pro_list ul li .imgbox{}
+.pro_list ul li .imgbox img{width: 100%;height: 100%;}
+.pro_list ul li .txtbox{background:#fff;}
+.pro_list ul li .txtbox p{margin:0 auto; color:#666; font-size:11px;  padding: 8px 20px;}
+.pro_list ul li .txtbox p.txtbox_title{font-size:14px;}
+.pro_list ul li .overlay{width: 220px;height: 320px; background:rgba(230,60,68,0.4) url(../images/list_overlay.png) no-repeat center; border:1px solid #fff;position:absolute; top:320px;}
+.pro_list ul li .overlay a{display:block; height: 320px;}
+.list_btn{width: 30px; line-height:320px; cursor:pointer;}
+.list_btn img{width: 100%; height: 100%;}
+.list_btn.prev_btn{left: 0;}
+.list_btn.next_btn{right: 0;}

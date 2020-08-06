@@ -26,6 +26,22 @@
 			$(".cont_slider").bxSlider({
 				auto:true,pager:false,controls:false
 			});
+
+			var cl_co = 0;
+			$(".prev_btn").click(function(){
+				cl_co--;
+				if(cl_co == -1){cl_co = 2;}
+				change();
+			});
+			$(".next_btn").click(function(){
+				cl_co++;
+				if(cl_co == 3){cl_co =0}
+				change();
+			});
+			function change(){
+				var move = cl_co*-1260
+				$(".favor_body>ul").animate({left:move},300)
+			}
 		});
 	</script>
 </head>
@@ -105,7 +121,7 @@
 			</div>
 		</div>
 		<div id="container">
-			<div class="content_wrap">
+			<div class="con_plat_wrap">
 				<div class="con_plat">
 					<ul>
 						<li class="plat_company">
@@ -166,35 +182,207 @@
 						</li>
 					</ul>
 				</div>
-				<div class="con_favorite_wrap">
+			</div>
+			<div class="con_favorite_wrap">
 					<div class="con_favorite">
 						<div class="favor_title">
 							<h3>오뚜기 인기상품</h3>
 							<p>오뚜기의 인기상품들을 소개합니다.</p>
 						</div>
 						<div class="favor_body">
-							<ul>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-							</ul>
+							<div class="pro_list">
+								<ul>
+									<li>
+										<div>
+											<div class="imgbox">
+												<img src="images/content02_01.jpg" alt="">
+											</div>
+											<div class="txtbox">
+												<p class="txtbox_title">프레스코 토마토 스파게티</p>
+												<p>조미소스/식품 > 스파게티소스</p>
+											</div>
+										</div>
+										<div class="overlay"><a href="#"></a></div>
+									</li>
+									<li>
+										<div>
+											<div class="imgbox">
+												<img src="images/content02_02.jpg" alt="">
+											</div>
+											<div class="txtbox">
+												<p class="txtbox_title">오즈키친 버섯불고기죽</p>
+												<p>레토르트/간편식 > 파우치죽</p>
+											</div>
+										</div>
+										<div class="overlay"><a href="#"></a></div>
+									</li>
+									<li>
+										<div>
+											<div class="imgbox">
+												<img src="images/content02_03.jpg" alt="">
+											</div>
+											<div class="txtbox">
+												<p class="txtbox_title">라조장 양파</p>
+												<p>식용유지 > 고추맛기름</p>
+											</div>
+										</div>
+										<div class="overlay"><a href="#"></a></div>
+									</li>
+									<li>
+										<div>
+											<div class="imgbox">
+												<img src="images/content02_04.jpg" alt="">
+											</div>
+											<div class="txtbox">
+												<p class="txtbox_title">진비빔면</p>
+												<p>라면류 > 진비빔면</p>
+											</div>
+										</div>
+										<div class="overlay"><a href="#"></a></div>
+									</li>
+									<li>
+										<div>
+											<div class="imgbox">
+												<img src="images/content02_05.jpg" alt="">
+											</div>
+											<div class="txtbox">
+												<p class="txtbox_title">양송이 크림스프 270g(상온)</p>
+												<p>레토르트/간편식 > 렌지</p>
+											</div>
+										</div>
+										<div class="overlay"><a href="#"></a></div>
+									</li>
+									<li>
+										<div>
+											<div class="imgbox">
+												<img src="images/content02_06.jpg" alt="">
+											</div>
+											<div class="txtbox">
+												<p class="txtbox_title">3분카레(매운맛)</p>
+												<p>레토르트/간편식 > 3분</p>
+											</div>
+										</div>
+										<div class="overlay"><a href="#"></a></div>
+									</li>
+									<li>
+										<div>
+											<div class="imgbox">
+												<img src="images/content02_07.jpg" alt="">
+											</div>
+											<div class="txtbox">
+												<p class="txtbox_title">진진짜라</p>
+												<p>라면류 > 진진짜라</p>
+											</div>
+										</div>
+										<div class="overlay"><a href="#"></a></div>
+									</li>
+									<li>
+										<div>
+											<div class="imgbox">
+												<img src="images/content02_08.jpg" alt="">
+											</div>
+											<div class="txtbox">
+												<p class="txtbox_title">오즈키친 토마토 미트볼(렌지)</p>
+												<p>레토르트/간편식 > 렌지</p>
+											</div>
+										</div>
+										<div class="overlay"><a href="#"></a></div>
+									</li>
+									<li>
+										<div>
+											<div class="imgbox">
+												<img src="images/content02_09.jpg" alt="">
+											</div>
+											<div class="txtbox">
+												<p class="txtbox_title">단호박 크림스프 270g(상온)</p>
+												<p>레토르트/간편식 > 렌지</p>
+											</div>
+										</div>
+										<div class="overlay"><a href="#"></a></div>
+									</li>
+									<li>
+										<div>
+											<div class="imgbox">
+												<img src="images/content02_010.jpg" alt="">
+											</div>
+											<div class="txtbox">
+												<p class="txtbox_title">콤비네이션피자</p>
+												<p>냉장/냉동식품 > 냉동피자</p>
+											</div>
+										</div>
+										<div class="overlay"><a href="#"></a></div>
+									</li>
+									<li>
+										<div>
+											<div class="imgbox">
+												<img src="images/content02_011.jpg" alt="">
+											</div>
+											<div class="txtbox">
+												<p class="txtbox_title">진라면 매운맛</p>
+												<p>라면류 > 진라면 매운맛</p>
+											</div>
+										</div>
+										<div class="overlay"><a href="#"></a></div>
+									</li>
+									<li>
+										<div>
+											<div class="imgbox">
+												<img src="images/content02_012.jpg" alt="">
+											</div>
+											<div class="txtbox">
+												<p class="txtbox_title">골드마요네스</p>
+												<p>조미소스/식품 > 마요네스</p>
+											</div>
+										</div>
+										<div class="overlay"><a href="#"></a></div>
+									</li>
+									<li>
+										<div>
+											<div class="imgbox">
+												<img src="images/content02_013.jpg" alt="">
+											</div>
+											<div class="txtbox">
+												<p class="txtbox_title">맛있는 오뚜끼 컵밥 톡톡 김치알밥</p>
+												<p>레토르트/간편식 > 컵밥</p>
+											</div>
+										</div>
+										<div class="overlay"><a href="#"></a></div>
+									</li>
+									<li>
+										<div>
+											<div class="imgbox">
+												<img src="images/content02_014.jpg" alt="">
+											</div>
+											<div class="txtbox">
+												<p class="txtbox_title">백세카레</p>
+												<p>분말/건조식품 > 카레</p>
+											</div>
+										</div>
+										<div class="overlay"><a href="#"></a></div>
+									</li>
+									<li>
+										<div>
+											<div class="imgbox">
+												<img src="images/content02_015.jpg" alt="">
+											</div>
+											<div class="txtbox">
+												<p class="txtbox_title">벨라티 허니자몽블랙티</p>
+												<p>다류 > 액상</p>
+											</div>
+										</div>
+										<div class="overlay"><a href="#"></a></div>
+									</li>
+								</ul>
+							</div>
+							<div class="list_btn prev_btn">
+								<img src="images/list_prev.png" alt="">
+							</div>
+							<div class="list_btn next_btn">
+								<img src="images/list_next.png" alt="">
+							</div>
 						</div>
 					</div>
 				</div>
-
-			</div>
 		</div>
 		<div id="footer"></div>
 	</div>
