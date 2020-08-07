@@ -61,25 +61,38 @@ i{font-size:7em; color:#fff; vertical-align:middle; margin-bottom:30px;}
 .plat_recipe h3{font-weight:bold;}
 /*favor*/
 .con_favorite_wrap{width: 1920px; background:url(../images/favor_bg.jpg) no-repeat 50%;}
-.con_favorite{ margin:0 auto;}
+.con_favorite{ margin:0 auto 15px;}
 .favor_title{text-align:center;margin-bottom:40px;}
 .favor_title h3{color:#fff; font-size:36px; padding-top:55px; margin-bottom:40px; position:relative;}
 .favor_title h3:after{content:""; display:block; width:40px; height: 2px; background:#fff; position:absolute; left:50%; transform:translateX(-50%);bottom:-18px;}
 .favor_title p{color:#fff;}
-.favor_body{width: 1260px; height: 320px;padding:0 30px;margin:0 auto; overflow:hidden; box-sizing:border-box; position:relative;}
-.favor_body div{float:left;}
-.pro_list{}
-.pro_list ul{overflow:hidden; width: 3790px; height: 320px;margin:0 40px;}
+.favor_body{width: 1260px; height: 450px; margin:0 auto;overflow:hidden;}
+.favor_body .pro_list,.favor_body .list_btn{float:left;}
+.pro_list{width: 1200px; height: 320px;margin:0 auto; overflow:hidden; box-sizing:border-box;position:relative;}
+.pro_list ul{overflow:hidden; width: 3790px; height: 320px; position:absolute;left: 0;}
 .pro_list ul li{float:left;width: 220px; height: 320px; margin-right:24px;}
 .pro_list ul li:hover .overlay{top:0; transition:0.3s;}
-.pro_list ul li .imgbox{}
 .pro_list ul li .imgbox img{width: 100%;height: 100%;}
-.pro_list ul li .txtbox{background:#fff;}
-.pro_list ul li .txtbox p{margin:0 auto; color:#666; font-size:11px;  padding: 8px 20px;}
+.pro_list ul li .txtbox{background:#fff; height: 59px;}
+.pro_list ul li .txtbox p{margin:0 auto; color:#666; font-size:11px;  padding: 3px 10px;}
 .pro_list ul li .txtbox p.txtbox_title{font-size:14px;}
 .pro_list ul li .overlay{width: 220px;height: 320px; background:rgba(230,60,68,0.4) url(../images/list_overlay.png) no-repeat center; border:1px solid #fff;position:absolute; top:320px;}
 .pro_list ul li .overlay a{display:block; height: 320px;}
 .list_btn{width: 30px; line-height:320px; cursor:pointer;}
 .list_btn img{width: 100%; height: 100%;}
-.list_btn.prev_btn{left: 0;}
-.list_btn.next_btn{right: 0;}
+/*news*/
+.con_news{background:#fffee5;}
+.news_title{text-align:center; margin-bottom:40px;}
+.news_title h3{color:#111; font-size:36px; padding-top:55px; margin-bottom:40px; position:relative;}
+.news_title h3:after{content:""; display:block; width:40px; height: 2px; background:#f00; position:absolute; left:50%; transform:translateX(-50%);bottom:-18px;}
+.news_title p{color:#111;}
+.news_body{width: 1260px; margin:0 auto;}
+.news_body ul{overflow:hidden;}
+.news_body ul li{float:left;}
+.news_body .news_menu{background:#ebeff2; line-height:52px; margin-bottom:47px;}
+.news_menu li{width: 300px;}
+.news_menu li:hover a{background:#223a6a; color:#fff;}
+.news_menu li a{display:block; text-align:center;}
+.news_list .list_body{}
+.news_list .list_body li{width: 292px; height: 331px;}
+/* 화사라면광고 url = https://youtu.be/bscDxrb6lcU*/
