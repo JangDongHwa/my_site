@@ -20,6 +20,20 @@
 				var sub_menu = $(this).index();
 				$(".sub_menu").hide();
 			});
+			
+			$("body").append("<div id='glayLayer'></div><div id='overLayer'></div>");
+			$("a.modal").click(function(){
+				var aHref = $(this).attr("href");
+				$("#glayLayer").show();
+				$("#overLayer").show().html("<img src='images/con_video_ee.jpg'>")
+				return false;
+			});
+			$("#glayLayer,#overLayer").click(function(){
+				$("#glayLayer").hide();
+				$("#overLayer").hide();
+			});
+
+
 			$(".slider").bxSlider({
 				auto:true,controls:false
 			});
@@ -42,6 +56,11 @@
 				var move = cl_co*-1220
 				$(".pro_list>ul").animate({left:move},300)
 			}
+			$(".news_menu>ul>li").click(function(){
+				var ind = $(this).index();
+				$(".list_body").removeClass("on").eq(ind).addClass("on")
+				return false;
+			});
 		});
 	</script>
 </head>
@@ -133,7 +152,7 @@
 							</a>
 						</li>
 						<li class="plat_video">
-							<a href="#">
+							<a href="#" class="modal">
 								<img src="images/con_video.jpg" alt="">
 								<h3>화사가 고른 짬뽕</h3>
 							</a>
@@ -398,7 +417,7 @@
 							</ul>
 						</div>
 						<div class="news_list">
-							<ul class="list_body">
+							<ul class="list_body on">
 								<li>
 									<a href="#">
 										<img src="images/content03_1.jpg" alt="list_img">
@@ -481,7 +500,38 @@
 				</div>
 			</div>
 		</div>
-		<div id="footer"></div>
+		<div id="footer">
+			<div class="footer_top">
+				<div class="f_menu">
+					<ul>
+						<li><a href="#">개인정보처리방침</a></li>
+						<li><a href="#">고객상담</a></li>
+						<li><a href="#">찾아오시는 길</a></li>
+						<li><a href="#">오뚜기몰</a></li>
+					</ul>
+					<div class="sns_link">
+						<ul>
+							<li class="insta"><a href="#">instagram</a></li>
+							<li class="blog"><a href="#">blog</a></li>
+							<li class="face"><a href="#">facebook</a></li>
+							<li class="youtu"><a href="#">youtube</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_copy_wrap">
+					<div class="f_logo">
+						<h1><a href="#"><img src="images/f_logo.png" alt="footer_logo"></a></h1>
+					</div>
+					<div class="f_copy">
+						<p>(주)오뚜기 | 사업자등록번호 : 138-81-03238  | 대표이사 이강훈  |</p>
+						<p>주소 (14060) 경기도 안양시 동안구 흥안대로 405(평촌동 160)  |  오뚜기 고객상담실 : 080-024-2311  |</p>
+						<p>오뚜기라면 고객상담실 : 080-088-1212(월~금 08:30~17:30)</p>
+						<p>Copyrightⓒottogi co.,Ltd All Rights Reserved.</p>
+					</div>
+					<div class="f_mark"><img src="images/f_mark.png" alt="footer_mark"></div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
