@@ -33,7 +33,6 @@
 				$("#overLayer").hide();
 			});
 
-
 			$(".slider").bxSlider({
 				auto:true,controls:false
 			});
@@ -56,8 +55,89 @@
 				var move = cl_co*-1220
 				$(".pro_list>ul").animate({left:move},300)
 			}
+
+			var current_one = 0;
+			var current_two = 0;
+			var banner_one = $(".body_bottom.la>li");
+			var banner_two = $(".body_bottom.sm>li");
+			var i_one =0;
+			var i_two =0;
+			var over_btn_one = false;
+			var over_btn_two = false;
+			function slide_next_one(){
+				if(over_btn_one==false){
+					over_btn_one=true;
+					i_one=current_one+1;
+					if(i_one==2){i_one=0}
+					slide_view_one("next");
+				}
+			}
+			function slide_prev_one(){
+				if(over_btn_one==false){
+					over_btn_one=true;
+					i_one=current_one-1;
+					if(i_one==-1){i_one=1}
+					slide_view_one("prev");
+				}
+			}
+			function slide_view_one(view){
+				var current_el=banner_one.eq(current_one);
+				var next_el=banner_one.eq(i_one);
+				if(view=="prev"){
+					current_el.css({left:0}).stop().animate({left:"-100%"},1000,function(){over_btn_one=false;});
+					next_el.css({left:"100%"}).stop().animate({left:0},1000);
+				}else{
+					current_el.css({left:0}).stop().animate({left:"100%"},1000,function(){over_btn_one=false;});
+					next_el.css({left:"-100%"}).stop().animate({left:0},1000);
+				}
+				current_one=i_one;
+			}
+
+			function slide_next_two(){
+				if(over_btn_two==false){
+					over_btn_two=true;
+					i_two=current_two+1;
+					if(i_two==4){i_two=0}
+					slide_view_two("next");
+				}
+			}
+			function slide_prev_two(){
+				if(over_btn_two==false){
+					over_btn_two=true;
+					i_two=current_two-1;
+					if(i_two==-1){i_two=3}
+					slide_view_two("prev");
+				}
+			}
+			function slide_view_two(view){
+				var current_el=banner_two.eq(current_two);
+				var next_el=banner_two.eq(i_two);
+				if(view=="prev"){
+					current_el.css({left:0}).stop().animate({left:"-50%"},1000,function(){over_btn_two=false;});
+					next_el.css({left:"50%"}).stop().animate({left:0},1000);
+				}else{
+					current_el.css({left:0}).stop().animate({left:"50%"},1000,function(){over_btn_two=false;});
+					next_el.css({left:"-50%"}).stop().animate({left:0},1000);
+				}
+				current_two=i_two;
+			}				
+			$(".bt_next").click(function(){
+				slide_next_one();
+				slide_next_two();
+			});
+			$(".bt_prev").click(function(){
+				slide_prev_one();
+				slide_prev_two();
+			});
+			function trigger(){
+				$(".bt_prev").trigger("click");
+			}
+			setInterval(trigger,4000);
+
+
 			$(".news_menu>ul>li").click(function(){
 				var ind = $(this).index();
+				$(".news_menu>ul>li").removeClass("active").eq(ind).addClass("active")
 				$(".list_body").removeClass("on").eq(ind).addClass("on")
 				return false;
 			});
@@ -204,10 +284,8 @@
 			</div>
 			<div class="con_favorite_wrap">
 				<div class="con_favorite">
-					<div class="favor_title">
-						<h3>오뚜기 인기상품</h3>
-						<p>오뚜기의 인기상품들을 소개합니다.</p>
-					</div>
+					<h3>오뚜기 인기상품</h3>
+					<p>오뚜기의 인기상품들을 소개합니다.</p>
 					<div class="favor_body">
 						<div class="list_btn prev_btn">
 							<img src="images/list_prev.png" alt="">
@@ -402,16 +480,51 @@
 					</div>
 				</div>
 			</div>
+			<div class="con_mall_wrap">
+				<div class="con_mall">
+					<h3>오뚜기 <span>M</span>all</h3>
+					<p>센스 넘치는 오뚜기몰을 소개합니다.</p>
+					<div class="mall_body">
+					<div class="body_top">
+						<a href="#"><img src="images/content04_title.jpg" alt=""></a>
+					</div>
+					<ul class="body_bottom la">
+						<li class="open">
+							<a href="#"><img src="images/content04_la01.jpg" alt=""></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/content04_la02.jpg" alt=""></a>
+						</li>
+					</ul>
+					<ul class="body_bottom sm">
+						<li class="open">
+							<a href="#"><img src="images/content04_sm01.jpg" alt=""></a>
+						</li>
+						<li class="opens">
+							<a href="#"><img src="images/content04_sm02.jpg" alt=""></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/content04_sm03.jpg" alt=""></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/content04_sm04.jpg" alt=""></a>
+						</li>
+					</ul>
+					<div class="mall_btn">
+						<span class="bt_prev"></span>
+						<span class="bt_next"></span>
+					</div>
+				</div>
+				</div>
+			</div>
 			<div class="con_news_wrap">
 				<div class="con_news">
-					<div class="news_title">
 						<h3>오뚜기 SNS</h3>
 						<p>소셜미디어를 통해 보는 오뚜기 스토리를 소개합니다.</p>
-					</div>
 					<div class="news_body">
 						<div class="news_menu">
 							<ul>
-								<li><a href="#">오뚜기 데일리</a></li>
+								<li class="active"><a href="#">오뚜기 데일리</a></li>
 								<li><a href="#">오늘,맛으로 행복한세상</a></li>
 								<li><a href="#">타바스코 코리아	</a></li>
 							</ul>
