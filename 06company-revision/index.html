@@ -12,6 +12,17 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
+
+			var menu_change = $(".hd_top").offset().top;
+			$(window).scroll(function(){
+				console.log(scrollY);
+				if(scrollY > 400){
+					$(".hd_top").addClass("change");
+				}else{
+					$(".hd_top").removeClass("change")
+				}
+			});
+			
 			$(".main_menu>ul>li").mouseenter(function(){
 				var sub_menu = $(this).index();
 				$(".sub_menu").eq(sub_menu).stop().slideDown();
@@ -55,13 +66,13 @@
 				var move = cl_co*-1220
 				$(".pro_list>ul").animate({left:move},300)
 			}
-
 			var current_one = 0;
 			var current_two = 0;
 			var banner_one = $(".body_bottom.la>li");
 			var banner_two = $(".body_bottom.sm>li");
-			var i_one =0;
-			var i_two =0;
+			var i_one = 0;
+			var i_two = 0;
+			var p_two = 0;
 			var over_btn_one = false;
 			var over_btn_two = false;
 			function slide_next_one(){
@@ -97,6 +108,7 @@
 				if(over_btn_two==false){
 					over_btn_two=true;
 					i_two=current_two+1;
+					p_two=current_two+2;
 					if(i_two==4){i_two=0}
 					slide_view_two("next");
 				}
@@ -105,6 +117,7 @@
 				if(over_btn_two==false){
 					over_btn_two=true;
 					i_two=current_two-1;
+					p_two=current_two-2;
 					if(i_two==-1){i_two=3}
 					slide_view_two("prev");
 				}
@@ -112,12 +125,15 @@
 			function slide_view_two(view){
 				var current_el=banner_two.eq(current_two);
 				var next_el=banner_two.eq(i_two);
+				var prev_el=banner_two.eq(p_two);
 				if(view=="prev"){
 					current_el.css({left:0}).stop().animate({left:"-50%"},1000,function(){over_btn_two=false;});
 					next_el.css({left:"50%"}).stop().animate({left:0},1000);
+					prev_el.css({left:"100%"}).stop().animate({left:"50%"},1000);
 				}else{
-					current_el.css({left:0}).stop().animate({left:"50%"},1000,function(){over_btn_two=false;});
-					next_el.css({left:"-50%"}).stop().animate({left:0},1000);
+					current_el.css({left:"50%"}).stop().animate({left:"100%"},1000,function(){over_btn_two=false;});
+					next_el.css({left:0}).stop().animate({left:"50%"},1000);
+					prev_el.css({left:"-50%"}).stop().animate({left:"0"},1000);
 				}
 				current_two=i_two;
 			}				
@@ -133,6 +149,14 @@
 				$(".bt_prev").trigger("click");
 			}
 			setInterval(trigger,4000);
+
+
+			$(".news_menu>ul>li").click(function(){
+				var ind = $(this).index();
+				$(".news_menu>ul>li").removeClass("active").eq(ind).addClass("active")
+				$(".list_body").removeClass("on").eq(ind).addClass("on")
+				return false;
+			});
 
 
 			$(".news_menu>ul>li").click(function(){

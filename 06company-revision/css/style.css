@@ -3,17 +3,19 @@
 /*headertop*/
 .hd_top_wrap{position:fixed; left:50%; transform:translateX(-50%); z-index:1;}
 .hd_top{width: 1260px; height: 100px;background:rgba(0,0,0,0.1); border-radius:50px;}
+.hd_top.change{background:#fef100;}
 .logo{float:left; width: 100px; height: 100px; padding-left:30px; margin-right:100px;}
 .logo a{display:block; line-height:100px; background:url(../images/logo.png) no-repeat 50%; text-indent:-9999px;}
 .main_menu{float:left; width:1000px; position:relative;}
 .main_menu>ul{overflow:hidden;width:calc(100% - 50px);}
 .main_menu>ul>li{width: 16.66%;float:left;line-height:100px;}
 .main_menu>ul>li>a{display:block;font-size:18px; font-weight:bold; text-align:center; color:#fff; text-shadow:0 0 10px #eee;}
-.main_menu>ul>li:hover>a{color:#fef100; text-shadow:0 0 10px #fff31d;}
+.main_menu>ul>li:hover>a{color:#e5464d; text-shadow:0 0 10px #dc2c34;}
 .sub_menu{display:none;}
-.sub_menu>li{line-height:50px;background:rgba(0,0,0,0.1);}
+.hd_top.change .sub_menu>li{line-height:50px;background:#fef100;}
+.sub_menu>li{line-height:50px; background:rgba(0,0,0,0.1);}
 .sub_menu>li>a{display:block;font-size:12px; font-weight:100; text-align:center; color:#fff; text-shadow:0 0 10px #eee;}
-.sub_menu>li:hover>a{color:#fef100; text-shadow:0 0 10px #fff31d;}
+.sub_menu>li:hover>a{color:#e5464d; text-shadow:0 0 10px #dc2c34;}
 .main_menu .toggle_menu{width: 50px; height: 50px; position:absolute; right:0; top:25px; cursor:pointer;}
 .toggle_menu div{width: 30px; height: 5px; background:#dc2c34; border-radius:5px;position:absolute; left:50%; transform:translateX(-50%); display:none;}
 .toggle_menu .bar1{top:18px;}
@@ -84,7 +86,7 @@ i{font-size:7em; color:#fff; vertical-align:middle; margin-bottom:30px;}
 .list_btn img{width: 100%; height: 100%;}
 
 /*mall*/
-.con_mall{width: 640px; margin:0 auto; text-align:center;}
+.con_mall{width: 640px; margin:0 auto; text-align:center; margin-bottom: 55px;}
 .con_mall h3{color:#111; font-size:36px; padding-top:55px; margin-bottom:40px; position:relative;}
 .con_mall h3:after{content:""; display:block; width:40px; height: 2px; background:#f00; position:absolute; left:50%; transform:translateX(-50%);bottom:-18px;}
 .con_mall h3 span{color:#f00;}
@@ -121,7 +123,7 @@ i{font-size:7em; color:#fff; vertical-align:middle; margin-bottom:30px;}
 /* 화사라면광고 url = https://youtu.be/bscDxrb6lcU*/
 
 /*foooter*/
-#footer{position:absolute; top:3734px; height: 200px;width: 100%;border-top:1px solid #222; background:#eee;}
+#footer{position:absolute; top:3630px; height: 200px;width: 100%;border-top:1px solid #222; background:#eee;}
 .footer_top{position:absolute; width: 1260px; left:50%; transform:translateX(-50%);}
 .footer_top .f_menu{overflow:hidden; line-height:65px; margin-bottom:15px;}
 .footer_top .f_menu>ul>li{float:left;margin-right:15px;}
