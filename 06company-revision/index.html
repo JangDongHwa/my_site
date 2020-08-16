@@ -165,6 +165,18 @@
 				$(".list_body").removeClass("on").eq(ind).addClass("on")
 				return false;
 			});
+
+			var win_height = $(document).height();
+			$(window).scroll(function(){
+				if(win_height/2 < scrollY){
+					$(".top_scroll ").addClass("view");
+				}else{
+					$(".top_scroll").removeClass("view");
+				}
+			});
+			$(".top_scroll").click(function(){
+				$("html,body").animate({scrollTop:0},300);
+			});
 		});
 	</script>
 </head>
@@ -637,6 +649,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="top_scroll">TOP</div>
 		<div id="footer">
 			<div class="footer_top">
 				<div class="f_menu">
