@@ -146,6 +146,9 @@ i{font-size:7em; color:#fff; vertical-align:middle; margin-bottom:30px;}
 .top_scroll:before{content:'';border-width:20px;border-style:solid; border-color: transparent transparent #fef100 transparent; position:absolute; top:-5px; left:50%; transform:translateX(-50%);}
 .top_scroll.view{opacity:1;}
 
+.top_scroll{position:fixed; width: 100px;height: 100px; line-height:100px; right:50px; bottom:50px; border-radius:50%; background:#000; color:white; text-align:center; cursor:pointer;animation: view_top 1s infinite alternate; opacity:0;transition:0.3s; z-index:1; color:#fef100;}
+.top_scroll:before{content:'';border-width:20px;border-style:solid; border-color:transparent transparent #fef100 transparent;position:absolute;top:-10px; left:50%;transform:translateX(-50%);}
+.top_scroll.view{opacity:1;}
 @keyframes view_top{
 from{transform:translateY(0);}
 to{transform:translateY(-20px);}
