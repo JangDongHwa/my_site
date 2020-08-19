@@ -27,6 +27,11 @@
 					}else{
 						$("#on_view_two").removeClass("move");
 					}
+					if(index == 3){
+						$(".dragon1").addClass("on");
+					}else{
+						$(".dragon1").removeClass("on");
+					}
 				}
 			});
 		});
@@ -59,7 +64,7 @@
 			</div>
 			<div class="main_body">
 				<div class="txt_title">
-					<h3>TAIWAN 알아보기</h3>
+					<a href="#"><h3>TAIWAN 알아보기<br><span>자세히...</span></h3></a>
 				</div>
 				<ul>
 					<li>
@@ -69,7 +74,7 @@
 						</a>
 						
 					</li>
-					<li>
+					<li class="down">
 						<a href="#">
 							<img src="images/main_list02.jpg" alt="">
 							<div class="list_txt">TAIZHONG</div>
@@ -83,7 +88,7 @@
 						</a>
 						
 					</li>
-					<li>
+					<li class="down">
 						<a href="#">
 							<img src="images/main_list04.jpg" alt="">
 							<div class="list_txt">FOODS</div>	
@@ -94,13 +99,27 @@
 			</div>
 		</div>
 		<div class="section" id="page3" data-anchor="a3st">
-		
+			<img src="images/page01_img01.png" alt="" class="dragon1" >
+			<div class="txt_body">
+				<h1><a href="#">logo</a></h1>
+				<p>TAIPEI는<br>[]이다.</p>
+				<div class="txt_body_btn">
+					<a href="#" data-hover="여행 꿀팁!">
+						<span>자세히보기</span>
+						<span class="btn_icon"></span>
+					</a>
+				</div>
+			</div>
 		</div>
 		<div class="section" id="page4" data-anchor="a4st">
-		
+			<div class="txt_body">
+				
+			</div>
 		</div>
 		<div class="section" id="page5" data-anchor="a5st">
-		
+			<div class="txt_body">
+				
+			</div>
 		</div>
 	</div>
 </body>
