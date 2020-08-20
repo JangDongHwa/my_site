@@ -16,8 +16,10 @@
 				anchors:["a1st","a2st","a3st","a4st"],
 				menu:"#top_menu",
 				navigation:true,
+
 				afterLoad:function(anchorslink,index){
 					if(index == 1){
+						alert("포트폴리오용으로 제작 되었으며 문제시 연락주시면 처리하겠습니다.");
 						$("#on_view_one").addClass("move");
 					}else{
 						$("#on_view_one").removeClass("move");
@@ -29,8 +31,34 @@
 					}
 					if(index == 3){
 						$(".dragon1").addClass("on");
+						$(".dragon2").addClass("on");
 					}else{
 						$(".dragon1").removeClass("on");
+						$(".dragon2").removeClass("on");
+					}
+					if(index == 4){
+						$(".flower").addClass("on");
+						var current = 0;
+						var banner = $(".txt_slide>li");
+						function slideNext(){
+
+								var currentEl = banner.eq(current);
+								current++; //다음배너값구하기 current 0 1 2 
+								if(current==3){
+									current = 0;
+								}
+								currentEl.eq(current).stop().animate({opacity:"block"});
+								console.log(currentEl)
+						}
+						$(".btn_next").click(function(){
+							slideNext();
+						});
+						function trigger(){
+						$(".btn_next").trigger("click");
+						}
+						setInterval(trigger,3000);
+					}else{
+						$(".flower").removeClass("on");						
 					}
 				}
 			});
@@ -99,26 +127,48 @@
 			</div>
 		</div>
 		<div class="section" id="page3" data-anchor="a3st">
-			<img src="images/page01_img01.png" alt="" class="dragon1" >
+			<img src="images/page01_img01.png" alt="" class="dragon1">
+			<img src="images/page01_img02.png" alt="" class="dragon2">
 			<div class="txt_body">
 				<h1><a href="#">logo</a></h1>
-				<p>TAIPEI는<br>[]이다.</p>
+				<p><span>TAIWAN</span><br>[ <span class="space"></span>]</p>
 				<div class="txt_body_btn">
-					<a href="#" data-hover="여행 꿀팁!">
-						<span>자세히보기</span>
-						<span class="btn_icon"></span>
+					<a href="#" class="btn-click">
+						<span class="text">자세히보기</span>
+						<span class="btn_icon fa fa-long-arrow-right"></span>
 					</a>
 				</div>
 			</div>
 		</div>
 		<div class="section" id="page4" data-anchor="a4st">
+			<img src="images/page02_img01.png" alt="" class="flower">
 			<div class="txt_body">
-				
+				<h1><a href="#">logo</a></h1>
+				<p><span>TAIWAN</span><br>[ <span class="space"></span>]</p>
+				<ul class="txt_slide">
+					<li class="t_slide">TAIPEI</li>
+					<li class="t_slide">TAIZHONG</li>
+					<li class="t_slide">KAOHSIUNG</li>
+				</ul>
+				<div class="btn_next"></div>
+				<div class="txt_body_btn">
+					<a href="#" class="btn-click">
+						<span class="text">자세히보기</span>
+						<span class="btn_icon fa fa-long-arrow-right"></span>
+					</a>
+				</div>
 			</div>
 		</div>
 		<div class="section" id="page5" data-anchor="a5st">
 			<div class="txt_body">
-				
+				<h1><a href="#">logo</a></h1>
+				<p><span>TAIWAN</span><br>[ <span class="space"></span>]</p>
+				<div class="txt_body_btn">
+					<a href="#" class="btn-click">
+						<span class="text">자세히보기</span>
+						<span class="btn_icon fa fa-long-arrow-right"></span>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
