@@ -13,7 +13,7 @@
 	<script>
 		$(function(){
 			$("#fullpage").fullpage({
-				anchors:["a1st","a2st","a3st","a4st"],
+				anchors:["a1st","a2st","a3st","a4st","a5st"],
 				menu:"#top_menu",
 				navigation:true,
 
@@ -32,33 +32,74 @@
 					if(index == 3){
 						$(".dragon1").addClass("on");
 						$(".dragon2").addClass("on");
+						var current = 0;
+						var banner = $(".txt_slide.p1>li");
+						function slideNext(){
+							var currentEl = banner.hide().eq(current);
+							current++; //다음배너값구하기 current 0 1 2 
+							if(current==3){
+								current = 0;
+							}
+							currentEl.css({display:"block"});
+							console.log(currentEl)
+						}
+						$(".btn_next.p1").click(function(){
+							slideNext();
+						});
+						function trigger(){
+						$(".btn_next.p1").trigger("click");
+						}
+						setInterval(trigger,2000);			
 					}else{
 						$(".dragon1").removeClass("on");
 						$(".dragon2").removeClass("on");
 					}
 					if(index == 4){
 						$(".flower").addClass("on");
+						$(".women").addClass("on");
 						var current = 0;
-						var banner = $(".txt_slide>li");
+						var banner = $(".txt_slide.p2>li");
 						function slideNext(){
-
-								var currentEl = banner.eq(current);
-								current++; //다음배너값구하기 current 0 1 2 
-								if(current==3){
-									current = 0;
-								}
-								currentEl.eq(current).stop().animate({opacity:"block"});
-								console.log(currentEl)
+							var currentEl = banner.hide().eq(current);
+							current++; //다음배너값구하기 current 0 1 2 
+							if(current==3){
+								current = 0;
+							}
+							currentEl.css({display:"block"});
+							console.log(currentEl)
 						}
-						$(".btn_next").click(function(){
+						$(".btn_next.p2").click(function(){
 							slideNext();
 						});
 						function trigger(){
-						$(".btn_next").trigger("click");
+						$(".btn_next.p2").trigger("click");
 						}
-						setInterval(trigger,3000);
+						setInterval(trigger,2000);
 					}else{
-						$(".flower").removeClass("on");						
+						$(".flower").removeClass("on");
+						$(".women").removeClass("on");						
+					}
+					if(index == 5){
+						var current = 0;
+						var banner = $(".txt_slide.p3>li");
+						function slideNext(){
+							var currentEl = banner.hide().eq(current);
+							current++; //다음배너값구하기 current 0 1 2 
+							if(current==3){
+								current = 0;
+							}
+							currentEl.css({display:"block"});
+							console.log(currentEl)
+						}
+						$(".btn_next.p3").click(function(){
+							slideNext();
+						});
+						function trigger(){
+						$(".btn_next.p3").trigger("click");
+						}
+						setInterval(trigger,2000);
+					}else{
+
 					}
 				}
 			});
@@ -92,25 +133,25 @@
 			</div>
 			<div class="main_body">
 				<div class="txt_title">
-					<a href="#"><h3>TAIWAN 알아보기<br><span>자세히...</span></h3></a>
+					<a href="#"><h3>TAIWAN 알아보기</span></h3></a>
 				</div>
 				<ul>
 					<li>
-						<a href="#">
+						<a href="#a3st">
 							<img src="images/main_list01.jpg" alt="">
 							<div class="list_txt">TAIPEI</div>
 						</a>
 						
 					</li>
 					<li class="down">
-						<a href="#">
+						<a href="#a4st">
 							<img src="images/main_list02.jpg" alt="">
 							<div class="list_txt">TAIZHONG</div>
 						</a>
 						
 					</li>
 					<li>
-						<a href="#">
+						<a href="#a5st">
 							<img src="images/main_list03.jpg" alt="">
 							<div class="list_txt">KAOHSUING</div>
 						</a>
@@ -129,9 +170,15 @@
 		<div class="section" id="page3" data-anchor="a3st">
 			<img src="images/page01_img01.png" alt="" class="dragon1">
 			<img src="images/page01_img02.png" alt="" class="dragon2">
-			<div class="txt_body">
-				<h1><a href="#">logo</a></h1>
+			<div class="txt_body p1">
+				<h1><a href="#a1st">logo</a></h1>
 				<p><span>TAIWAN</span><br>[ <span class="space"></span>]</p>
+				<ul class="txt_slide p1">
+					<li class="t_slide">TAIPEI</li>
+					<li class="t_slide">TAIZHONG</li>
+					<li class="t_slide">KAOHSIUNG</li>
+				</ul>
+				<div class="btn_next p1"></div>
 				<div class="txt_body_btn">
 					<a href="#" class="btn-click">
 						<span class="text">자세히보기</span>
@@ -142,15 +189,16 @@
 		</div>
 		<div class="section" id="page4" data-anchor="a4st">
 			<img src="images/page02_img01.png" alt="" class="flower">
-			<div class="txt_body">
-				<h1><a href="#">logo</a></h1>
+			<img src="images/page02_img02.png" alt="" class="women">
+			<div class="txt_body p2">
+				<h1><a href="#a1st">logo</a></h1>
 				<p><span>TAIWAN</span><br>[ <span class="space"></span>]</p>
-				<ul class="txt_slide">
+				<ul class="txt_slide p2">
 					<li class="t_slide">TAIPEI</li>
 					<li class="t_slide">TAIZHONG</li>
 					<li class="t_slide">KAOHSIUNG</li>
 				</ul>
-				<div class="btn_next"></div>
+				<div class="btn_next p2"></div>
 				<div class="txt_body_btn">
 					<a href="#" class="btn-click">
 						<span class="text">자세히보기</span>
@@ -160,9 +208,15 @@
 			</div>
 		</div>
 		<div class="section" id="page5" data-anchor="a5st">
-			<div class="txt_body">
-				<h1><a href="#">logo</a></h1>
+			<div class="txt_body p3">
+				<h1><a href="#a1st">logo</a></h1>
 				<p><span>TAIWAN</span><br>[ <span class="space"></span>]</p>
+				<ul class="txt_slide p3">
+					<li class="t_slide">TAIPEI</li>
+					<li class="t_slide">TAIZHONG</li>
+					<li class="t_slide">KAOHSIUNG</li>
+				</ul>
+				<div class="btn_next p3"></div>
 				<div class="txt_body_btn">
 					<a href="#" class="btn-click">
 						<span class="text">자세히보기</span>
