@@ -4,7 +4,7 @@
 /*header*/
 /*headertop*/
 .hd_top_wrap{position:fixed; left:50%; transform:translateX(-50%); z-index:1;}
-.hd_top{width: 1260px; height: 100px;background:rgba(0,0,0,0.1); border-radius:50px;}
+.hd_top{width: 1260px; height: 100px;background:rgba(0,0,0,0.5); border-radius:50px;}
 .hd_top.change{background:#fef100;}
 .logo{float:left; width: 100px; height: 100px; padding-left:30px; margin-right:100px;}
 .logo a{display:block; line-height:100px; background:url(../images/logo.png) no-repeat 50%; text-indent:-9999px;}
@@ -155,13 +155,13 @@ to{transform:translateY(-20px);}
 /*header*/
 /*headertop*/
 .hd_top_wrap{width: 100%;position:fixed; left:50%; transform:translateX(-50%); z-index:1;}
-.hd_top{width: 100%; height: 100px;background:rgba(0,0,0,0.1); border-radius:50px;}
+.hd_top{width: 100%; height: 100px;background:rgba(0,0,0,0.5); border-radius:50px;}
 .hd_top.change{background:#fef100;}
-.logo{float:left; width: 100%; height: 100px; padding-left:30px; margin-right:100px;}
+.logo{float:left; width: 15%; height: 100px; padding-left:30px;}
 .logo h1{width: calc(100% - 50px);}
 .logo a{display:block; line-height:100px; background:url(../images/logo.png) no-repeat ; text-indent:-9999px;}
-.main_menu{float:left; width:100%;}
-.main_menu>ul{overflow:hidden;width:calc(100% - 50px);display:none;}
+.main_menu{float:left; width:80%;}
+.main_menu>ul{overflow:hidden;width:calc(100% - 50px);}
 .main_menu>ul>li{width: 16.66%;float:left;line-height:100px;}
 .main_menu>ul>li>a{display:block;font-size:18px; font-weight:bold; text-align:center; color:#fff; text-shadow:0 0 10px #eee;}
 .main_menu>ul>li:hover>a{color:#e5464d; text-shadow:0 0 10px #dc2c34;}
@@ -170,7 +170,7 @@ to{transform:translateY(-20px);}
 .sub_menu>li{line-height:50px; background:rgba(0,0,0,0.1);}
 .sub_menu>li>a{display:block;font-size:12px; font-weight:100; text-align:center; color:#fff; text-shadow:0 0 10px #eee;}
 .sub_menu>li:hover>a{color:#e5464d; text-shadow:0 0 10px #dc2c34;}
-.main_menu .toggle_menu{width: 50px; height: 50px; position:absolute; right:15px; top:25px; cursor:pointer;}
+.main_menu .toggle_menu{width: 50px; height: 50px; position:absolute; right:15px; top:25px; cursor:pointer; }
 .toggle_menu div{width: 30px; height: 5px; background:#dc2c34; border-radius:5px;position:absolute; left:50%; transform:translateX(-50%);}
 .toggle_menu .bar1{top:18px;}
 .toggle_menu .bar2{top:26px;}
