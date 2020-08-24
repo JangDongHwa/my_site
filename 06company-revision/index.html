@@ -3,6 +3,7 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>오뚜기</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
@@ -31,6 +32,17 @@
 				$(".sub_menu").hide();
 			});
 			
+			$(".toggle_menu").click(function(){
+				var toggle = $(this).attr("class");
+				if(toggle == "toggle_menu"){
+					$(this).addClass("open");
+					$(".m_menu").stop().animate({left:0},300);
+				}else{
+					$(this).removeClass("open");
+					$(".m_menu").stop().animate({left:"-100%"},300);
+				}
+			});
+
 			$("body").append("<div id='glayLayer'></div><div id='overLayer'></div>");
 			$("a.modal").click(function(){
 				var aHref = $(this).attr("href");
@@ -194,7 +206,7 @@
 								<a href="#">회사소개</a>
 								<ul class="sub_menu">
 									<li><a href="#">(주)오뚜기</a></li>
-									<li><a href="#">지속 가능 경영</a></li>
+									<li><a href="#">지속가능경영</a></li>
 									<li><a href="#">인재 채용</a></li>
 									<li><a href="#">사업장 소개</a></li>
 									<li><a href="#">찾아오시는 길</a></li>
@@ -238,6 +250,40 @@
 							<div class="bar1"></div>
 							<div class="bar2"></div>
 							<div class="bar3"></div>
+						</div>
+						<div class="m_menu">
+							<ul>
+								<li>
+									<a href="#">
+										<h3>회사소개</h3>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h3>제품정보</h3>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h3>쿠킹&스토리</h3>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h3>홍보센터</h3>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h3>고객서비스</h3>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h3>오뚜기몰</h3>
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>

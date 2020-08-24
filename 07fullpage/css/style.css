@@ -106,3 +106,6 @@ to{bottom:20px;}
 .txt_body_btn .btn-click:hover:before{position: absolute; left: 90px;content:" 여행 꿀팁!"; opacity: 1; text-align: center;}
 .txt_body .txt_body_btn .btn-click span{display:inline-block;}
 .txt_body_btn .btn_icon{position: absolute;left: 1px;top: 1px;bottom: 1px;padding: 9px 10px;border-radius: 50%;text-align: center;color: #ffdd00;background-color: rgba(255, 255, 255, 0.6);transition: all 0.5s ease;-webkit-transition: all 0.5s ease}
+
+/*footer*/
+.footer{}
